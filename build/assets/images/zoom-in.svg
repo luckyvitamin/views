@@ -1,0 +1,8 @@
+<svg id="see_other_images_from_this_product" data-name="see other images from this product" xmlns="http://www.w3.org/2000/svg" width="15.4" height="16.71" viewBox="0 0 15.4 16.71"><defs><style>.cls-1{fill:#a4abaf;}</style></defs><title>zoom-in</title><path class="cls-1" d="M15.4,15.29l-3.2-3.2a7.13,7.13,0,1,0-1.6,1.22L14,16.71ZM2,7.11a5.12,5.12,0,1,1,5.12,5.11A5.12,5.12,0,0,1,2,7.11Z"/><polygon class="cls-1" points="7.66 4.03 6.39 4.03 6.39 6.44 4.07 6.44 4.07 7.72 6.39 7.72 6.39 10.12 7.66 10.12 7.66 7.72 9.99 7.72 9.99 6.44 7.66 6.44 7.66 4.03"/></svg>
+
+
+<symbol id="searchIconGray">
+<title>search-icon-gray</title>
+<path d="M7.1,2A5.1,5.1,0,1,1,2,7.1,5.1,5.1,0,0,1,7.1,2m0-2a7.1,7.1,0,1,0,7.1,7.1A7.1,7.1,0,0,0,7.1,0Z" style="fill:#a4abaf"/>
+<rect x="11.9" y="11.7" width="2" height="5.03" transform="translate(-6.3 13.3) rotate(-45)" style="fill:#a4abaf"/>
+</symbol>

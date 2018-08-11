@@ -158,7 +158,7 @@ var resetRightMenu = function (){
 /**
  * This loads the raw svg code into a div onto the page to give us a sprite sheet for SVGs
  */
-$.get("images/svgMap.svg", function(data) {
+$.get("assets/images/svgMap.svg", function(data) {
     var div = document.createElement("div");
     div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);
     document.body.insertBefore(div, document.body.childNodes[0]);
