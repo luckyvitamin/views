@@ -19,6 +19,10 @@ var paths = {
   vendor: {
     js: 'src/assets/vendor/js/*.js',
     css: 'src/assets/vendor/css/*.css',
+  },
+  html: {
+    src: 'src/*.html',
+    dest: 'build/'
   }
 }
 
@@ -48,19 +52,26 @@ function vendorJs() {
     .pipe(gulp.dest(paths.js.dest));
 }
 
+function html() {
+  return gulp.src(paths.html.src)
+    .pipe(gulp.dest(paths.html.dest))
+}
+
 function watch() {
   gulp.watch(paths.vendor.js, vendorJs);
   gulp.watch(paths.styles.src, styles);
   gulp.watch(paths.js.src, js);
+  gulp.watch(paths.html.src, html);
 }
 
 exports.clean = clean;
 exports.styles = styles;
 exports.js = js;
+exports.html = html;
 exports.vendorJs = vendorJs;
 exports.watch = watch;
 
-var build = gulp.series(clean, vendorJs, gulp.parallel(styles, js), watch);
+var build = gulp.series(clean, vendorJs, gulp.parallel(styles, js), html, watch);
 
 gulp.task('build', build);
 gulp.task('default', build);

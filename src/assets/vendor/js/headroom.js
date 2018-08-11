@@ -314,7 +314,7 @@
 
         /**
          * Gets the height of the document
-         * @see http://james.padolsey.com/javascript/get-document-height-cross-browser/
+         * @see http://james.padolsey.com/assets/js/get-document-height-cross-browser/
          * @return {int} the height of the document in pixels
          */
         getDocumentHeight : function () {
