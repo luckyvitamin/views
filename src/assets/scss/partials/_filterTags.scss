@@ -1,0 +1,33 @@
+.filterTagsContainer {
+  display: none;
+  padding: 20px 0 0;
+  &>ul {
+    padding: 0;
+    list-style: none;
+
+    li.filterTag {
+      display: inline-block;
+      position: relative;
+      border: 1px solid #e4e4e4;
+      border-radius: 3px;
+      padding: 11px 10px 8px 32px;
+      margin: 0 6px 10px 0;
+      svg {
+        position:absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-49%);
+      }
+    }
+
+    li.clearAll {
+      display: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 11px;
+      line-height: 14px;
+      color: $clover;
+      cursor: pointer;
+    }
+  }
+}

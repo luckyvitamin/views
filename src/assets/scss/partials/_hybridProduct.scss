@@ -1,0 +1,178 @@
+.hybridProduct {
+  margin-bottom: 35px;
+  .productCard {
+    padding: 10px;
+    border: 1px solid #eee;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #fff;
+    .photoHolder {
+      width: 190px;
+      margin: auto;
+      img {
+        width: 100%;
+      }
+      .moreOptions{
+        text-align: center;
+        display: block;
+        font-size: 11px;
+        color:#81878a;
+        letter-spacing: 1px;
+      }
+    }
+    .productDescription {
+      width: 100%;
+      .brand {
+        font-size: 11px;
+      }
+      .name {
+        font-family: 'FranklinGothicURW-Dem';
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+
+      .price, .autoShipTextHolder {
+        display: none;
+      }
+
+      .savings {
+        font-size: 16px;
+      }
+      .perServing {
+        font-family: 'FranklinGothicURW-Boo';
+        font-size: 16px;
+      }
+    }
+    .quickControls {
+      .shippingOptions {
+        display: none;
+      }
+      .tipIcon {
+        display: inline;
+        position: absolute;
+        top: 3px;
+        padding-bottom: 0;
+        right: 3px;
+      }
+      .controlCta {
+        margin: 20px 0 10px;
+      }
+      .addToCart {
+        &.gridBtn {
+          span {
+            font-family: "FranklinGothicURW-Dem";
+            line-height: 27px;
+          }
+          svg {
+            vertical-align: top;
+          }
+        }
+        .autoTag{
+          font-size: 14px;
+          line-height: 3px;
+        }
+      }
+    }
+    .ratingContainer {
+      margin: 10px 0 10px;
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .hybridProduct {
+    .productCard {
+      padding: 20px;
+      .photoHolder {
+        float: left;
+        width: 20.08%;
+        .moreOptions{
+          font-size: 14px;
+          font-family: 'FranklinGothicURW-Boo';
+        }
+      }
+      .productDescription {
+        float: left;
+        margin-left: 40px;
+        width: 34.26%;
+        .brand {
+          font-size: 16px;
+        }
+        .name {
+          font-size: 22px;
+          margin: 0;
+        }
+        .item_number, .autoShipTextHolder {
+          display: block;
+        }
+        .price {
+          display: block;
+          small {
+            font-family: 'FranklinGothicURW-Boo';
+            font-size: 16px;
+          }
+          .bigPrice {
+            font-size: 27px;
+          }
+        }
+
+        .autoShipText {
+          font-size: 16px;
+        }
+        .mobileAutoShip {
+          display: none;
+        }
+        .luckyPoints{
+          margin-bottom: 20px;
+        }
+      }
+      .quickControls {
+        width: 32.16%;
+        float: right;
+        .controlCta {
+          margin-top: 0;
+          padding: 15px 0 0 20px;
+        }
+        .shippingOptions {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .hybridProduct {
+    .productCard {
+      .photoHolder {
+        width: 29.41%;
+      }
+      .productDescription {
+        margin-left: 30px;
+        width: 38.50%;
+        .name {
+          font-size: 24px;
+          line-height: 1;
+        }
+      }
+      .quickControls {
+        width: 24.06%;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .hybridProduct {
+    .productCard {
+      .photoHolder {
+        width: 21.65%;
+      }
+      .productDescription {
+        width: 51.35%;
+      }
+      .quickControls {
+        width: 18.31%;
+      }
+    }
+  }
+}

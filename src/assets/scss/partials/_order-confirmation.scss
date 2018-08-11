@@ -1,0 +1,1313 @@
+@mixin font-fgu-heavy {
+  font-family: "FranklinGothicURW-Hea", sans-serif;
+}
+
+@mixin font-fgu-medium {
+  font-family: "FranklinGothicURW-Med", sans-serif;
+}
+
+@mixin font-fgu-book {
+  font-family: "FranklinGothicURW-Boo", sans-serif;
+}
+
+@mixin font-fgu-demi {
+  font-family: "FranklinGothicURW-Dem", sans-serif;
+}
+
+@mixin yellow-btn {
+  @include makeButton($tangerine, #eeb952, $charcoal, #ffbc3e, #ffbc3e, $charcoal, #cea047,"FranklinGothicURW-Dem");
+}
+
+@mixin green-btn {
+  @include makeButton(#c5e86c, #aed251, $charcoal, #c5e86c, #c5e86c, $charcoal, #89a936,"FranklinGothicURW-Dem");
+}
+
+.order-confirmation {
+  margin-top: 30px;
+
+  a {
+    color: $clover;
+    text-decoration: none;
+  }
+
+  .centered-title {
+    color: $charcoal;
+    @include font-fgu-heavy();
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) {
+      font-size: 28px;
+    }
+
+  }
+
+  .conf-container {
+    padding: 27px 12px 0;
+    margin-bottom: 50px;
+    border: none;
+    position: relative;
+
+    @media (min-width: $screen-sm-min) {
+      border: 2px solid $borderGrey;
+      padding: 32px 0 0;
+      margin-bottom: 50px;
+    }
+
+    .print {
+      display: none;
+      text-align: right;
+
+      @media (min-width: $screen-sm-min) {
+        padding-right: 3.5%;
+        display: block;
+      }
+
+      span {
+        width: 28px;
+        height: 11px;
+        color: $linkGreen;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        vertical-align: middle;
+        cursor: pointer;
+        @include font-fgu-medium();
+
+        img {
+          display: inline;
+          width: 17px;
+          height: 16px;
+          transform: translateY(-15%);
+        }
+      }
+    }
+
+    .conf-header {
+      color: $clover;
+      font-size: 20px;
+      line-height: 22px;
+      font-weight: 400;
+      text-align: center;
+      @include font-fgu-heavy();
+
+      @media (min-width: $screen-sm-min) {
+        font-size: 28px;
+        line-height: 28px;
+      }
+    }
+
+    .order-num {
+      text-align: center;
+      color: $charcoal;
+      @include font-fgu-demi();
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 400;
+
+      @media (min-width: $screen-sm-min) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      .number {
+        @include font-fgu-book();
+        font-size: 18px;
+        line-height: 21px;
+        color: $clover;
+
+        @media (min-width: $screen-sm-min) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .email-copy {
+      margin: 0 auto;
+      max-width: 695px;
+      text-align: center;
+      color: $charcoal;
+      @include font-fgu-book();
+      font-size: 14px;
+      line-height: 18px;
+
+      @media (min-width: $screen-sm-min) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .grey-block {
+      margin: 16px auto 50px;
+      max-width: 695px;
+      background-color: #e4e4e4;
+      padding: 24px;
+
+      .item-ship-count {
+        color: $charcoal;
+        @include font-fgu-medium();
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        padding-bottom: 6px;
+      }
+
+      .tracking-message {
+        color: $charcoal;
+        @include font-fgu-book();
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        padding: 0 0 14px;
+
+
+        @media (min-width: $screen-md-min) {
+          padding: 0 12px 14px;
+        }
+
+        a {
+          color: $clover;
+          text-decoration: none;
+        }
+      }
+
+      .autoship-welcome {
+        color: $charcoal;
+        @include font-fgu-demi();
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+
+        img {
+          display: inline;
+          width: 25px;
+          height: 27px;
+          margin-right: 4px;
+        }
+
+        div {
+          @include font-fgu-book();
+          font-size: 16px;
+        }
+      }
+    }
+
+    .expander-row {
+      padding: 15px;
+      text-align: center;
+      border-top: 3px solid $borderGrey;
+      margin-left: -1px;
+      margin-right: -1px;
+    }
+
+    .review-order-control {
+      text-decoration: none;
+      color: $charcoal;
+      @include font-fgu-demi();
+      font-size: 16px;
+      line-height: 18px;
+      cursor: pointer;
+
+      .arrow {
+        padding-left: 2px;
+      }
+    }
+
+    .order-details-mobile-button {
+      @include font-fgu-medium();
+      height: 42px;
+      max-width: 372px;
+      padding: 12px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      cursor:pointer;
+      border-radius: 3px;
+      border: 1px solid $borderGrey;
+      font-size: 14px;
+      color: $charcoal;
+      line-height: 18px;
+      position: relative;
+
+      .arrow {
+        width: 7px;
+        height: 11px;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        background: url("../images/green-arrow-icon-side.svg") top center no-repeat;
+      }
+    }
+
+  }
+}
+
+ul.customer-address {
+  list-style: none;
+  padding: 0;
+
+  li {
+    color: $charcoal;
+    @include font-fgu-book();
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+
+    @media (min-width: $screen-sm-min) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &.bigger {
+    li {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%); }
+  100% {
+    -webkit-transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+}
+
+#mobileOrderSummary {
+  -webkit-animation-name: slideDown;
+  animation-name: slideDown;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  display: none;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: fixed;
+  z-index: 900;
+  background-color: #ffffff;
+  top: 50px;
+
+  &.menuOpened{
+    display: block;
+  }
+
+  .menuScroll{
+    position: absolute;
+    padding: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    height:100%;
+    width:100%;
+  }
+
+  .close {
+    top: 10px;
+    right: 10px;
+    padding: 2px 8px 2px 2px;
+  }
+}
+
+
+.order-details-container {
+
+  @media (min-width: $screen-sm-min) {
+    display: none;
+    border-top: 2px solid $borderGrey;
+    position: static;
+    padding: 60px 0 120px;
+    border-left: none;
+    width: 100%;
+    height: auto;
+    overflow: unset;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .order-details {
+    color: $charcoal;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 80px;
+    clear: both;
+
+
+    @media (min-width: $screen-sm-min) {
+      width: 83%;
+      padding-top: 0;
+      max-width: 1080px;
+
+    }
+
+    .title {
+      @include font-fgu-heavy();
+      font-size: 20px;
+      line-height: 13px;
+      font-weight: 400;
+      padding: 0 10px;
+      margin-bottom: 30px;
+
+      @media (min-width: $screen-sm-min) {
+        font-size: 28px;
+        line-height: 28px;
+        padding: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .print {
+      float: right;
+      @include font-fgu-book();
+      font-size: 14px;
+      line-height: 21px;
+
+      span {
+        color: $clover;
+        cursor: pointer;
+
+        img {
+          color: $clover;
+          display: inline;
+          padding-left: 2px;
+          transform: translateY(-10%);
+        }
+      }
+
+
+    }
+
+    .detail-cols {
+      padding: 0 10px;
+      @media (min-width: $screen-sm-min) {
+        display: flex;
+        padding: 0 0 40px 0;
+      }
+      .first-col, .second-col, .third-col {
+
+        @media (min-width: $screen-sm-min) {
+          display: inline-block;
+          flex: 1;
+          flex-direction: column;
+          vertical-align: top;
+        }
+      }
+      .first-col {
+
+        @media (min-width: $screen-sm-min) {
+          width: 27%;
+        }
+        @media (min-width: $screen-md-min) {
+          width: 28%;
+        }
+
+      }
+      .second-col {
+
+        @media (min-width: $screen-sm-min) {
+          padding: 32px 20px 0;
+          width: 29%;
+        }
+        @media (min-width: $screen-md-min) {
+          padding: 32px 28px 0;
+          width: 30%;
+        }
+      }
+      .third-col {
+        padding-top: 24px;
+
+        @media (min-width: $screen-sm-min) {
+          padding-top: 0;
+          padding-left: 20px;
+          width: 42%;
+        }
+        @media (min-width: $screen-md-min) {
+          padding-left: 28px;
+          width: 41%;
+        }
+      }
+    }
+
+    .borders {
+      border-top: 1px solid $borderGrey;
+      border-bottom: 1px solid $borderGrey;
+      padding: 25px 10px;
+
+      @media (min-width: $screen-sm-min) {
+        border-left: 1px solid $borderGrey;
+        border-right: 1px solid $borderGrey;
+        border-top: none;
+        border-bottom: none;
+        padding: 0 10px;
+      }
+    }
+
+    .subtitle {
+      @include font-fgu-heavy();
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 31px;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+
+      @media (min-width: $screen-sm-min) {
+        padding-bottom: 0;
+      }
+    }
+
+    .content-heading {
+      @include font-fgu-medium();
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+      padding-bottom: 16px;
+    }
+    .details-content {
+      @include font-fgu-book();
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .shipping-info {
+      @include font-fgu-book();
+      font-size: 14px;
+      font-weight: 400;
+      display: flex;
+      padding-top: 16px;
+
+      ul {
+        flex: 1;
+      }
+      img {
+        margin-right: 8px;
+        margin-top: 3px;
+        width: 21px;
+        height: 15px;
+
+        @media (min-width: $screen-sm-min) {
+          width: 49px;
+          height: 36px;
+          margin-top: 0;
+        }
+      }
+      .method {
+        @include font-fgu-demi();
+      }
+      .est-delivery {
+        padding-bottom: 10px;
+        @media (min-width: $screen-sm-min) {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    .billing-info {
+      padding: 4px 0;
+
+      @media (min-width: $screen-sm-min) {
+        padding: 0;
+
+      }
+      .card-used {
+        padding-bottom: 20px;
+        display: flex;
+        color: $charcoal;
+        @include font-fgu-book();
+        font-size: 13px;
+        line-height: 21px;
+
+        @media (min-width: $screen-sm-min) {
+          font-size: 14px;
+          line-height: 22px;
+        }
+
+        img {
+          display: inline;
+          margin-right: 6px;
+          width: 24px;
+          height: 15px;
+
+          @media (min-width: $screen-sm-min) {
+            width: 47px;
+            height: 28px;
+            margin-right: 12px;
+          }
+        }
+        .card-info {
+          flex: 1;
+          .value {
+            @include font-fgu-demi();
+          }
+        }
+      }
+
+      .billing-address {
+        @include font-fgu-book();
+        font-size: 12px;
+        font-style: normal;
+        line-height: 18px;
+
+
+        @media (min-width: $screen-sm-min) {
+          font-size: 14px;
+          font-style: italic;
+          line-height: 26.02px;
+          padding-top: 10px;
+        }
+      }
+
+      .pad-bottom-10 {
+        padding-bottom: 10px;
+      }
+    }
+    .order-summary {
+      .discount {
+        color: #dd7e00;
+        @include font-fgu-demi();
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        .value {
+          float: right;
+        }
+      }
+      .discount-code,
+      .taxes-and-fees {
+        color: $charcoal;
+        @include font-fgu-book();
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .taxes-and-fees {
+        padding-bottom: 8px;
+      }
+      .subtotal {
+        padding: 20px 0 10px;
+        color: $charcoal;
+        @include font-fgu-medium();
+        line-height: 24px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .order-total {
+        margin: 12px 0 6px;
+        color: $charcoal;
+        @include font-fgu-heavy();
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+        .value {
+          color: $charcoal;
+          @include font-fgu-demi();
+          font-size: 26px;
+          font-weight: 400;
+          line-height: 22px;
+        }
+
+      }
+      .you-earned {
+        @include font-fgu-book();
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #999999;
+        .total {
+          @include font-fgu-heavy();
+          color: $clover;
+        }
+      }
+      .you-saved {
+        @include font-fgu-book();
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #999999;
+        .total {
+          color: #dd7e00;
+          text-align: right;
+          @include font-fgu-demi();
+        }
+      }
+    }
+    .your-items {
+      border: 2px solid #e9e9e9;
+      margin: 40px auto 0;
+      width: 100%;
+
+      @media (min-width: $screen-sm-min) {
+        max-width: 1080px;
+      }
+
+      .header {
+        background-color: #e9e9e9;
+        padding: 10px 12px 8px;
+        height: 44px;
+
+        @media (min-width: $screen-sm-min) {
+          padding: 16px 20px 8px;
+        }
+
+        .yi-title {
+          color: $charcoal;
+          @include font-fgu-heavy();
+          width: 65%;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          text-transform: uppercase;
+          display: inline-block;
+        }
+        .qty {
+          color: $charcoal;
+          @include font-fgu-book();
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 20px;
+          display: inline-block;
+        }
+      }
+      .order-item {
+        .item-details {
+          width: 100%;
+          display: inline-block;
+          padding: 20px 5px 20px 10px;
+
+          @media (min-width: $screen-sm-min) {
+            width: 64.5%;
+            display: inline-block;
+            padding: 20px 0 20px 20px;
+          }
+
+          img.product {
+            display: inline;
+            width: 88px;
+            height: 88px;
+            border: 1px solid #e4e4e4;
+            background-color: #ffffff;
+            margin-right: 20px;
+            vertical-align: top;
+
+            @media (min-width: $screen-sm-min) {
+              width: 134px;
+              height: 134px;
+            }
+          }
+
+          .details-wrapper {
+            display: inline-block;
+            width: 69%;
+            max-width: 69%;
+
+            @media (min-width: $screen-sm-min) {
+              max-width: 61.5%;
+            }
+          }
+
+          .name {
+            color: $charcoal;
+            @include font-fgu-book();
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
+
+            @media (min-width: $screen-sm-min) {
+              font-size: 18px;
+              line-height: 24px;
+            }
+          }
+          .item-number {
+            color: $charcoal;
+            @include font-fgu-book();
+            font-size: 12px;
+            line-height: 18px;
+
+            @media (min-width: $screen-sm-min) {
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+          .price {
+            @include font-fgu-heavy();
+            font-size: 14px;
+            line-height: 18px;
+
+            @media (min-width: $screen-sm-min) {
+              font-size: 18px;
+              line-height: 27px;
+            }
+          }
+
+          .mobile-qty {
+            @include font-fgu-book();
+            color: $charcoal;
+            font-size: 14px;
+            line-height: 20px;
+            span {
+              @include font-fgu-demi();
+            }
+          }
+          .autoship-enabled {
+            color: $clover;
+            @include font-fgu-demi();
+            font-size: 16px;
+            font-weight: 400;
+            img {
+              display: inline;
+              width: 16px;
+              height: 15px;
+
+            }
+          }
+          .autoship-discount {
+            color: #81878a;
+            @include font-fgu-book();
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 18px;
+          }
+        }
+        .item-qty {
+          display: inline-block;
+          padding: 20px 20px 20px 0;
+          vertical-align: top;
+          color: $charcoal;
+          @include font-fgu-demi();
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20.01px;
+          text-transform: uppercase;
+        }
+        .item-bottom-border {
+          clear: both;
+          float: left;
+          height: 2px;
+          width: 100%;
+          background-color: #e7e7e7;
+
+        }
+      }
+    }
+
+
+    & .order-item:last-child {
+      .item-bottom-border {
+        display: none;
+      }
+    }
+  }
+}
+
+.card-container {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 28px;
+  .slick-slide{
+    padding: 0;
+    img{
+      width: auto;
+    }
+  }
+
+  .slick-center{
+    .points-card{
+      height: 405px;
+      margin: 0 8px;
+    }
+  }
+
+  .points-card {
+    overflow: hidden;
+    height: 345px;
+    padding: 20px;
+    margin: 20px 8px;
+    vertical-align: top;
+    @media (min-width: $screen-sm-min) {
+    margin: 0 0 16px;
+    height: auto;
+    min-height: 417px;
+    }
+    @media (min-width: $screen-md-min) {
+      min-height: 550px;
+    }
+    @media (min-width: $screen-lg-min) {
+      min-height: 450px;
+    }
+    &.teal {
+      background: url("../images/points-card-teal.png") top center no-repeat;
+      background-size: cover;
+
+      .card-header {
+        margin-bottom: 28px;
+      }
+      .selects-container {
+        margin-top: 28px;
+        .select-wrapper {
+          display: inline-block;
+          width: 32%;
+          float: left;
+          margin: 0;
+          position: relative;
+
+          &.middle {
+            float: none;
+            margin: 0 auto;
+          }
+
+          &.right {
+            float: right
+          }
+        }
+      }
+      .full-width .select-wrapper {
+        clear: both;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .free-gift-button {
+        width: 100%;
+        border-radius: 3px;
+        @include green-btn();
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 13px;
+        height: 39px;
+        text-align: center;
+        margin-top: 28px;
+      }
+
+
+    }
+    &.green {
+      background: url("../images/points-card-green.png") top center no-repeat;
+      background-size: cover;
+
+      .card-list {
+        margin: 6px auto 10px;
+
+        ul {
+          padding-left: 20px;
+        }
+      }
+      .email {
+        @include font-fgu-medium();
+      }
+
+      input {
+        margin-bottom: 20px;
+      }
+
+      .create-account-button {
+        margin-top: 8px;
+        width: 100%;
+        border-radius: 3px;
+        @include yellow-btn();
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 13px;
+        height: 39px;
+        text-align: center;
+      }
+
+    }
+    &.orange {
+      background: url("../images/points-card-orange.png") top center no-repeat;
+      background-size: cover;
+
+      .card-body {
+        margin: 12px 0 8px;
+      }
+
+      label {
+        float: left;
+        color: #ffffff;
+        @include font-fgu-demi();
+        font-size: 12px;
+        font-weight: 400;
+        margin: 6px 0 3px;
+      }
+      #referral-message {
+        resize: none;
+        width: 100%;
+        height: 94px !important;
+        line-height: 18px;
+      }
+
+      .send-email-button {
+        margin-top: 26px;
+        width: 100%;
+        border-radius: 3px;
+        @include green-btn();
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 13px;
+        height: 39px;
+        text-align: center;
+      }
+
+    }
+    &.light-green {
+      background: url("../images/points-card-light-green.png") top center no-repeat;
+      background-size: cover;
+
+      .card-body {
+        margin: 16px 0 38px;
+        padding: 0;
+
+        @media (min-width: $screen-md-min) {
+          padding: 0 10px;
+        }
+      }
+      .links {
+        text-align: left;
+      }
+      .social-link {
+        height: 16px;
+        color: #ffffff;
+        @include font-fgu-demi();
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+        margin-bottom: 28px;
+        text-align: left;
+        float: left;
+
+        img {
+          display: inline;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .point-circle {
+      width: 74px;
+      height: 74px;
+      border: 3px solid #ffffff;
+      background-color: $charcoal;
+      border-radius: 50%;
+      color: #ffffff;
+      @include font-fgu-heavy();
+      font-size: 40px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+      display: inline-block;
+      position: relative;
+
+
+      .sub-copy {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #ffffff;
+        @include font-fgu-demi();
+        font-size: 11px;
+        font-weight: 400;
+        text-transform: uppercase;
+
+      }
+
+    }
+
+    .card-callout {
+      @include font-fgu-heavy();
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      max-width: 52%;
+      padding: 6px 0 0 5px;
+      text-transform: uppercase;
+      text-align: left;
+      vertical-align: top;
+      display: inline-block;
+
+      @media (min-width: $screen-sm-min) {
+        font-size: 20px;
+        line-height: 20px;
+        max-width: 62%;
+        padding: 12px 0 0 10px;
+      }
+    }
+    
+    .card-body {
+      text-align: center;
+      color: #ffffff;
+      @include font-fgu-demi();
+      font-size: 18px;
+      font-weight: 400;
+
+      .smaller {
+        font-size: 16px;
+      }
+    }
+    
+    .card-list {
+      span {
+
+      }
+      text-align: left;
+      @include  font-fgu-demi();
+      color: #ffffff;
+      font-size: 12px;
+      @media (min-width: $screen-sm-min) {
+        font-size: 15px;
+      }
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    textarea,
+    select {
+      background: #ffffff;
+      border-radius: 3px;
+      border: none;
+      outline: none;
+      color: #9ba2a6;
+      @include font-fgu-book();
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 13px;
+      padding: 10px 12px;
+      min-height: 40px;
+      width: 100%
+    }
+
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    select + label {
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      z-index: 1;
+      transform: translateY(-50%);
+    }
+    
+
+  }
+
+  .border-card {
+    max-width: 644px;
+    min-height: 313px;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid $borderGrey;
+    margin: 0 auto 40px;
+
+    @media (min-width: $screen-md-min) {
+      border: 2px solid $borderGrey;
+      max-width: 644px;
+      min-height: 313px;
+      margin: 0 auto;
+    }
+
+    &.text-card {
+      max-width: 100%;
+      width: 100%;
+      text-align: left;
+      border-bottom: 1px solid $borderGrey;
+      border-left: none;
+      border-right: none;
+
+      @media (min-width: $screen-md-min) {
+        border: 2px solid $borderGrey;
+      }
+
+      .text-updates {
+        background: url('../images/get-text-updates.png') top center no-repeat;
+        background-size: cover;
+        background-color: #79ced5;
+        width: 100%;
+        height: 96px;
+
+        @media (min-width: $screen-sm-min) {
+          background-size: contain;
+        }
+
+        @media (min-width: $screen-md-min) {
+          background-size: cover;
+        }
+
+      }
+
+      .content {
+        padding: 22px;
+      }
+
+      .checkbox-wrapper {
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+
+        @media (min-width: $screen-sm-min) {
+          width: 85%;
+        }
+
+        input {
+          display: none;
+        }
+        input + label {
+          padding-left: 32px;
+          color: $charcoal;
+          @include font-fgu-book();
+          font-size: 20px;
+          line-height: 20px;
+          -webkit-font-smoothing: antialiased;
+
+          &:before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-color: #ffffff;
+            border: 2px solid $borderGrey;
+            position: absolute;
+            top: 2px;
+            left: 0;
+          }
+        }
+        input:checked + label {
+          &:before {
+            border: 2px solid $linkGreen;
+            content: url(../images/in-stock-icon.svg);
+            line-height: 17px;
+            padding-left: 1px;
+          }
+        }
+      }
+
+      .enroll-container {
+        position: relative;
+      }
+
+      input.phone {
+        width: 100%;
+        height: 40px;
+        border-radius: 3px;
+        padding: 0 5px;
+        border: 1px solid #e1e1e1;
+        background-color: #ffffff;
+        margin-right: 13px;
+        margin-bottom: 8px;
+
+        @media (min-width: $screen-sm-min) {
+          width: 45%;
+        }
+
+        & + label {
+          color: #9ba2a6;
+          @include  font-fgu-book();
+          font-size: 9px;
+          font-weight: 400;
+          line-height: 13px;
+          position: absolute;
+          top: 2px;
+          left: 6px;
+        }
+      }
+
+      .enroll-button {
+        display: inline;
+        width: 100%;
+        height: 40px;
+        @include yellow-btn();
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 13px;
+        border-radius: 3px;
+
+        @media (min-width: $screen-sm-min) {
+          width: 45%;
+        }
+      }
+    }
+
+
+
+    &.survey-card {
+      min-height: 313px;
+      height: 313px;
+      .survey {
+        background: url('../images/howd-we-do.png') top center no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 128px;
+      }
+
+      .content {
+        padding: 0 10px;
+        text-align: center;
+      }
+
+      .title {
+        color: $clover;
+        @include font-fgu-heavy();
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 16px;
+
+        @media (min-width: $screen-sm-min) {
+          font-size: 28px;
+          line-height: 28px;
+        }
+      }
+
+      .message {
+        color: $charcoal;
+        @include font-fgu-book();
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 14px;
+
+        @media (min-width: $screen-sm-min) {
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+
+      .survey-button {
+        margin-top: 22px;
+        width: 277px;
+        height: 40px;
+        border-radius: 3px;
+        @include green-btn();
+        font-size: 20px;
+        line-height: 13px;
+        color: $charcoal;
+        text-align: center;
+        cursor: pointer;
+
+        @media (min-width: $screen-sm-min) {
+        }
+      }
+    }
+
+
+    @media (min-width: $screen-sm-min) {
+    }
+
+  }
+}

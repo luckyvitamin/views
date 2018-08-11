@@ -1,0 +1,142 @@
+.gridView {
+  @include clearfix();
+  @media (min-width: $screen-sm-min) {
+    margin-left: -15px;
+  }
+  .gridContainer {
+    width: 50%;
+    position: relative;
+    float: left;
+    @media (min-width: $screen-sm-min) {
+      width: 33%;
+      padding-left: 15px;
+      margin-bottom: 15px;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: 25%;
+    }
+    .productDescription {
+      margin-bottom: 10px;
+      min-height: 200px;
+
+      @media (min-width: $screen-sm-min) {
+        min-height: 244px;
+      }
+      .mobileAutoShip{
+        .price, .savings {
+          display: block;
+        }
+        @media (min-width: $screen-sm-min) {
+          .price {
+            font-size: 20px;
+          }
+        }
+      }
+      .shippingOptions{
+        @media (min-width: $screen-sm-min) {
+          label{
+          font-size: 20px;
+            line-height: 20px;
+        }
+          input{
+            margin: 0 6px 0 0;
+          }
+        }
+      }
+    }
+
+    .ratingContainer{
+      margin:10px 0 0;
+    }
+    .notifyMe {
+      span{
+        text-align: center;
+        line-height: 16px;
+        small{
+          display: block;
+          color: $charcoal;
+          font-size: 11px;
+          line-height: 10px;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+      }
+      @media (min-width: $screen-sm-min) {
+        span {
+          text-align: left;
+          small {
+            font-size: 16px;
+            font-family: "FranklinGothicURW-Dem";
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .productCard {
+      padding: 10px;
+      border: .5px solid #eeeeee;
+      background-color: #fff;
+      overflow: visible;
+      @media (min-width: $screen-sm-min) {
+        border: 1px solid #eee;
+        border-bottom: 1px solid #dbdbdb;
+        padding: 20px;
+
+      }
+      .photoHolder{
+        img{
+          width: 100%;
+        }
+        @media (max-width: $screen-sm-min) {
+          width: 100%;
+        }
+      }
+      .outOfStock{
+        @media (min-width: $screen-sm-min) {
+          min-height: 95px;
+        }
+        @media (min-width: $screen-lg-min) {
+          min-height: 92px;
+        }
+
+        b{
+          color:#07b2d3;
+          vertical-align: text-bottom;
+          line-height: 17px;
+          @media (min-width: $screen-sm-min) {
+            line-height: 22px;
+          }
+          padding-left: 5px;
+        }
+        .btn-cartAction{
+          margin-top: 3px;
+          @media (min-width: $screen-sm-min) {
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .quickControls {
+        min-height: 93px;
+        .addToCart {
+          height: 50px;
+          &.gridBtn{
+            span {
+              font-family: "FranklinGothicURW-Dem";
+              line-height: 27px;
+            }
+          }
+          .autoTag{
+            font-size: 14px;
+            line-height: 3px;
+          }
+        }
+      }
+    }
+  }
+  .greyOut{
+    .styleSelect{
+      display: none!important;
+    }
+  }
+}

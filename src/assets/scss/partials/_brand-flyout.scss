@@ -1,0 +1,241 @@
+.brandFlyout {
+  width: 550px;
+  height: 100%;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  bottom: 0;
+  right: -550;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+
+  &.leftScroll {
+    //direction: rtl; cannot use RTL wrapper as it causes the fixed header to render incorrectly on retina screens in webkit
+    background-color: transparent;
+  }
+
+  .correctScroll {
+    direction: ltr;
+    background-color: #ffffff;
+    width: 550px;
+    min-height: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: auto;
+  }
+
+  .nonDefault {
+    display: none;
+  }
+
+  .fixed {
+    background-color: #ffffff;
+    position: static;
+    width: 550px;
+    top: 0;
+    z-index: 1001;
+    height: 50px;
+
+    .header {
+      position: relative;
+
+      .brand {
+        display: inline-block;
+        font-family: FranklinGothicURW-Dem;
+        padding: 16px 10px;
+        color: $charcoalFont;
+      }
+
+      .close {
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 12px;
+        font-family: FranklinGothicURW-Med;
+        font-size: 10px;
+        text-align: center;
+
+        button {
+          font: inherit;
+          color: inherit;
+          text-transform: none;
+          background-color: transparent;
+          border: 0;
+          margin: 0;
+          overflow: visible;
+        }
+
+        div {
+          text-transform: uppercase;
+          text-align: center;
+          font: inherit;
+          color: $luckyBackgroundGreen;
+          margin: -8px 0 0 -5px;
+        }
+      }
+    }
+
+    .subheader {
+      display: none;
+
+      background-color: $luckyBackgroundGreen;
+      ul {
+        list-style: none;
+        padding: 15.5px 0 15.5px 10px;
+        margin: 0;
+        li {
+          display: inline-block;
+          width: 32%;
+
+          a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 11px;
+            color: #d5ee97;
+            padding: 15.5px 0;
+
+            &:hover, &:focus {
+              text-decoration: none;
+            }
+          }
+
+          &.active a {
+            color: #ffffff;
+            border-bottom: 4px solid #ffffff;
+          }
+
+          &:nth-child(1) {
+            text-align: left;
+          }
+          &:nth-child(2) {
+            text-align: center;
+            padding-left: 10px;
+          }
+          &:nth-child(3) {
+            width: 31%;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+  &.default {
+    .hero {
+      position: relative;
+      background-size: cover;
+      margin: 0 0 30px 0;
+      background: url("../images/cover-pattern.svg") top center repeat;
+      height: 150px;
+
+      .logo {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 20%);
+
+      }
+    }
+  }
+
+  .content {
+    padding: 0 40px 40px;
+
+    .imgTitle {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    p {
+      font-family: FranklinGothicURW-Boo;
+      font-size: 16px;
+      line-height: 24px;
+      color: inherit;
+
+      &.center {
+        text-align: center;
+      }
+    }
+  }
+
+  &.branded {
+    .fixed {
+      height: 100px;
+      position: fixed;
+    }
+
+    .subheader, .nonDefault {
+      display: block;
+    }
+
+    .hero {
+      height: 220px;
+      margin: 100px 0 30px 0;
+      background: url("../images/tazo-hero.png") top center no-repeat;
+      position: relative;
+
+      .logo {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 20%);
+
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .brandFlyout {
+    width: 292px;
+    right: -292;
+
+    .correctScroll {
+      width: 293px;
+    }
+
+    .fixed {
+      width: 292px;
+
+      .subheader {
+        height: 49px;
+
+        ul {
+          padding: 5.5px 10px;
+
+          li {
+            vertical-align: top;
+            padding-top: 10px;
+
+            b.mobileHide {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .hero {
+      height: 118px;
+      background-size: contain;
+
+      .logo {
+        width: 103px;
+        height: 61px;
+      }
+    }
+    .content {
+      padding: 0 12px 12px;
+    }
+
+    &:not(.default) {
+      .hero {
+        height: 118px;
+        background-size: contain;
+        margin: 100px 0 20px 0;
+      }
+    }
+  }
+}

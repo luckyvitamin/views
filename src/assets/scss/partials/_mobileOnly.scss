@@ -1,0 +1,38 @@
+.mobileLongNav{
+  ul {
+    background-color:#ffffff;
+    padding:0;
+    li {
+      height: 48px;
+      border-bottom: 1px solid #eeeeee;
+      background: url(../images/green-arrow-icon-side.svg) no-repeat 96% 50%;
+      .logo{
+        margin-top:15px;
+      }
+      a{
+        padding:0 10px;
+        display: block;
+        line-height: 48px;
+        text-transform: uppercase;
+        font-family: "FranklinGothicURW-Dem";
+        &:hover{
+          text-decoration: none;
+        }
+        small{
+          font-family: "FranklinGothicURW-Boo";
+        }
+      }
+
+      &:hover{
+        background-color: #f8f8f8;
+      }
+    }
+  }
+}
+
+.mobileFreeShipping{
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: -40px;
+  font-family: "FranklinGothicURW-Boo";
+}

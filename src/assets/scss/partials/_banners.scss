@@ -1,0 +1,25 @@
+.desktopBanner{
+  display: none;
+  margin-bottom: 20px;
+  img{
+    max-width: 100%;
+  }
+  @media (min-width: $screen-sm-min) {
+    display: block;
+  }
+}
+.midProductBanner{
+  img{
+    max-width: 100%;
+  }
+  margin-bottom: 10px;
+}
+.mobileBanner{
+  margin-bottom: 10px;
+  img{
+    max-width: 100%;
+  }
+  @media (min-width: $screen-sm-min) {
+    display: none;
+  }
+}

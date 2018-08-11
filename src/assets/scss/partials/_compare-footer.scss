@@ -1,0 +1,149 @@
+#compareProductsFooter {
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1500;
+  height: 78px;
+  max-height: 78px;
+  min-height: 78px;
+  bottom: -78px;
+  background-color: $clover;
+  text-align: center;
+  padding: 15px 0;
+
+
+  .copyContainer {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+
+      h4 {
+        color: white;
+        font-family: FranklinGothicURW-Dem;
+        font-size:18px;
+        line-height: 16px;
+        padding: 10px 0 0 0;
+        margin: 0;
+      }
+
+      p {
+        color: white;
+        font-size:14px;
+        line-height: 16px;
+        padding: 0;
+        margin: 0;
+      }
+  }
+  .itemsContainer {
+    display: inline-block;
+    vertical-align: top;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 5px;
+      position: relative;
+
+      .close {
+        cursor: pointer;
+        background-color: $charcoal;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        color: #ffffff;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+
+        &:before {
+          content: 'X';
+          font-size: 11px;
+          position: absolute;
+          top: 1px;
+          left: 4.5px;
+        }
+      }
+
+      img {
+        height: 48px;
+        width: 48px;
+      }
+    }
+  }
+
+
+  a.compareBtn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #6d7275;
+    font-family: FranklinGothicURW-Dem;
+    font-size:16px;
+    line-height: 14px;
+    text-decoration: none;
+    padding: 12px 16px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 5px 20px 0
+  }
+
+  a.removeAll {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffffff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+    line-height: 16px;
+    font-weight:bold;
+    text-decoration: underline;
+
+  }
+}
+
+@media (max-width: 767px) {
+  #compareProductsFooter {
+    height: 107px;
+    max-height: 107px;
+    min-height: 107px;
+    padding: 0;
+
+    .copyContainer {
+      vertical-align: top;
+      display: block;
+      text-align: center;
+
+      h4, p {
+        display: inline-block;
+      }
+    }
+
+    .itemsContainer {
+      vertical-align: top;
+      ul {
+        display: inline-block;
+        padding: 6px 0 0 0;
+        margin-bottom: 4px;
+
+        li {
+          @media (max-width: 350px) {
+            margin-right:3px;
+          }
+        }
+      }
+    }
+
+    a.compareBtn {
+      display: inline-block;
+      margin: 10px 0 0 0;
+
+      @media (max-width: 350px) {
+        padding: 12px 4px;
+      }
+    }
+
+    a.removeAll {
+      vertical-align: top;
+      display: block;
+    }}
+}

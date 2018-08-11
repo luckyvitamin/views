@@ -1,0 +1,227 @@
+@import 'mixins/imageHelpers';
+
+.sprite {
+  background-image: url(../images/spriteMap.png);
+  display: inline-block;
+}
+
+.sprite-norton {
+  width: 129px;
+  height: 60px;
+  background-position: 0 0;
+}
+
+.sprite-mcafee {
+  width: 143px;
+  height: 60px;
+  background-position: -120px 0;
+}
+
+.sprite-bizrate {
+  width: 114px;
+  height: 60px;
+  background-position: -263px 0;
+}
+
+.sprite-reseller {
+  width: 147px;
+  height: 60px;
+  background-position: -377px 0;
+}
+
+.sprite-nongmo {
+  width: 125px;
+  height: 60px;
+  background-position: -524px 0;
+}
+
+.sprite-naturalproducts {
+  width: 139px;
+  height: 60px;
+  background-position: -649px 0;
+}
+
+.sprite-stellaservice {
+  width: 103px;
+  height: 60px;
+  background-position: -788px 0;
+}
+
+.flag {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
+  background-image: url(../images/country_flags.png);
+  background-repeat: no-repeat;
+  @include retinaBG("../images/country_flags@2x.png", 240px 120px);
+  &.AU {
+    background-position: 0 0
+  }
+
+  .AT {
+    background-position: -24px 0
+  }
+
+  &.BE {
+    background-position: -48px 0
+  }
+
+  &.BR {
+    background-position: -72px 0
+  }
+
+  &.HU {
+    background-position: -144px -24px
+  }
+
+  &.CA {
+    background-position: -120px 0
+  }
+
+  &.CN {
+    background-position: -144px 0
+  }
+
+  &.HR {
+    background-position: -168px 0
+  }
+
+  &.CY {
+    background-position: -192px 0
+  }
+
+  &.CZ {
+    background-position: -216px 0
+  }
+
+  &.DK {
+    background-position: 0 -24px
+  }
+
+  &.EE {
+    background-position: -24px -24px
+  }
+
+  &.FI {
+    background-position: -48px -24px
+  }
+
+  &.FR {
+    background-position: -72px -24px
+  }
+
+  &.DE {
+    background-position: -96px -24px
+  }
+
+  &.GR {
+    background-position: -120px -24px
+  }
+
+  &.IN {
+    background-position: -168px -24px
+  }
+
+  &.IR {
+    background-position: -192px -24px
+  }
+
+  &.IL {
+    background-position: -216px -24px
+  }
+
+  &.IT {
+    background-position: 0 -48px
+  }
+
+  &.JP {
+    background-position: -24px -48px
+  }
+
+  &.LV {
+    background-position: -48px -48px
+  }
+
+  &.LT {
+    background-position: -72px -48px
+  }
+
+  &.LU {
+    background-position: -96px -48px
+  }
+
+  &.MT {
+    background-position: -120px -48px
+  }
+
+  &.MX {
+    background-position: -144px -48px
+  }
+
+  &.NL {
+    background-position: -168px -48px
+  }
+
+  &.NZ {
+    background-position: -192px -48px
+  }
+
+  &.NO {
+    background-position: -216px -48px
+  }
+
+  &.PH {
+    background-position: 0 -72px
+  }
+
+  &.PL {
+    background-position: -24px -72px
+  }
+
+  &.PT {
+    background-position: -48px -72px
+  }
+
+  &.RO {
+    background-position: -72px -72px
+  }
+
+  &.SK {
+    background-position: -96px -72px
+  }
+
+  &.RS {
+    background-position: -120px -72px
+  }
+
+  &.KR {
+    background-position: -144px -72px
+  }
+
+  &.ES {
+    background-position: -168px -72px
+  }
+
+  &.SE {
+    background-position: -192px -72px
+  }
+
+  &.CH {
+    background-position: -216px -72px
+  }
+
+  &.GB {
+    background-position: 0 -96px
+  }
+
+  &.US {
+    background-position: -24px -96px
+  }
+
+  &.XX {
+    background-position: -48px -96px
+  }
+}

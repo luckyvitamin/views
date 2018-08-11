@@ -1,0 +1,158 @@
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%)
+  }
+
+  100% {
+    -webkit-transform: translateY(0)
+  }
+}
+
+@-moz-keyframes slideDown {
+  0% {
+    -moz-transform: translateY(-100%)
+  }
+
+  100% {
+    -moz-transform: translateY(0)
+  }
+}
+
+@-o-keyframes slideDown {
+  0% {
+    -o-transform: translateY(-100%)
+  }
+
+  100% {
+    -o-transform: translateY(0)
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%)
+  }
+
+  100% {
+    transform: translateY(0)
+  }
+}
+
+@keyframes animationFrames {
+  0% {
+    transform: scaleX(1.00) scaleY(1.00);
+  }
+
+  26% {
+    transform: scaleX(1.20) scaleY(1.20);
+  }
+
+  50% {
+    transform: scaleX(1.00) scaleY(1.00);
+  }
+
+  71% {
+    transform: scaleX(1.20) scaleY(1.20);
+  }
+
+  100% {
+    transform: scaleX(1.20) scaleY(1.20);
+  }
+}
+
+@-moz-keyframes animationFrames {
+  0% {
+    -moz-transform: scaleX(1.00) scaleY(1.00);
+  }
+
+  26% {
+    -moz-transform: scaleX(1.20) scaleY(1.20);
+  }
+
+  50% {
+    -moz-transform: scaleX(1.00) scaleY(1.00);
+  }
+
+  71% {
+    -moz-transform: scaleX(1.20) scaleY(1.20);
+  }
+
+  100% {
+    -moz-transform: scaleX(1.20) scaleY(1.20);
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    -webkit-transform: scaleX(1.00) scaleY(1.00);
+  }
+
+  26% {
+    -webkit-transform: scaleX(1.20) scaleY(1.20);
+  }
+
+  50% {
+    -webkit-transform: scaleX(1.00) scaleY(1.00);
+  }
+
+  71% {
+    -webkit-transform: scaleX(1.20) scaleY(1.20);
+  }
+
+  100% {
+    -webkit-transform: scaleX(1.20) scaleY(1.20);
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    -o-transform: scaleX(1.00) scaleY(1.00);
+  }
+
+  26% {
+    -o-transform: scaleX(1.20) scaleY(1.20);
+  }
+
+  50% {
+    -o-transform: scaleX(1.00) scaleY(1.00);
+  }
+
+  71% {
+    -o-transform: scaleX(1.20) scaleY(1.20);
+  }
+
+  100% {
+    -o-transform: scaleX(1.20) scaleY(1.20);
+  }
+}
+
+@-ms-keyframes animationFrames {
+  0% {
+    -ms-transform: scaleX(1.00) scaleY(1.00);
+  }
+
+  26% {
+    -ms-transform: scaleX(1.20) scaleY(1.20);
+  }
+
+  50% {
+    -ms-transform: scaleX(1.00) scaleY(1.00);
+  }
+
+  71% {
+    -ms-transform: scaleX(1.20) scaleY(1.20);
+  }
+
+  100% {
+    -ms-transform: scaleX(1.20) scaleY(1.20);
+  }
+}
+
+
+.linearColor{
+  -webkit-transition: color .2s linear;
+  -moz-transition: color .2s linear;
+  -ms-transition: color .2s linear;
+  -o-transition: color .2s linear;
+  transition: color .2s linear;
+}

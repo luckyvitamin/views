@@ -1,0 +1,52 @@
+#recomendedProducts, #recentlyViewed{
+  img{
+    width: 100%;
+  }
+}
+
+.noResults{
+  margin-bottom: 25px;
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 15px;
+  @media (min-width: $screen-sm-min) {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .sorry{
+    color:#07b2d3;
+  }
+  h1{
+    font-family: "FranklinGothicURW-Boo";
+    @media (max-width: $screen-xs-max) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+  .suggestions{
+    font-family: "FranklinGothicURW-Boo";
+    font-size:13px;
+    line-height: 28px;
+    @media (min-width: $screen-sm-min) {
+      font-size: 16px;
+    }
+    ul{
+      padding-left: 25px;
+    }
+    li{
+      font-size: 13px;
+      line-height: 23px;
+      @media (min-width: $screen-sm-min) {
+        font-size: 16px;
+      }
+    }
+  }
+  .didYouMean{
+    @media (min-width: $screen-sm-min) {
+      font-size: 16px;
+    }
+    a{
+      color:$clover;
+      font-family: "FranklinGothicURW-Dem";
+    }
+  }
+}

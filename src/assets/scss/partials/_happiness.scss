@@ -1,0 +1,83 @@
+
+.guatanteeTitleContainer {
+  padding-top: 45px;
+  margin: 0 auto;
+  @include clearfix();
+  @media (min-width: $screen-md-min) {
+    margin-top: 30px;
+    padding-top: 40px;
+    float: left;
+  }
+  @media (min-width: $screen-lg-min) {
+    margin-top: 20px;
+  }
+  .learnMoreLink {
+    display: none;
+    float: right;
+    margin-top: 15px;
+    font-size: 12px;
+    text-decoration: underline;
+    @media (min-width: $screen-sm-min) {
+      display: block;
+    }
+  }
+}
+
+.guatanteeWrapper {
+  margin-top: 25px;
+  margin-bottom:0;
+  @media (min-width: $screen-md-min) {
+    margin-top: 30px;
+  }
+  .guaranteePoints {
+
+    margin-bottom: 15px;
+    text-align: center;
+    height: 160px;
+    @media (max-width: $screen-sm-min) {
+      height: 140px;
+      width: 167px;
+    }
+    @media (min-width: $screen-md-min) {
+      border-left: 1px dashed #dedede;
+      padding-left: 17px;
+      height: 177px;
+    }
+    @media (min-width: $screen-lg-min) {
+      padding: 0 25px;
+      height: 150px;
+    }
+    .imageGap {
+      padding-top: 15px;
+    }
+    
+    &.borderOnlyLarge {
+      @media (max-width: $screen-lg-min) {
+        border-left: 0;
+        margin-left:0;
+      }
+    }
+  }
+
+  .guaranteeTitle {
+    font-family: FranklinGothicURW-Dem;
+    line-height: 18px;
+    font-size: 14px;
+    color: $charcoal;
+    word-wrap: break-word;
+    @media (min-width: $screen-md-min) {
+      font-size: 18px;
+    }
+
+
+  }
+  .guaranteeAbstract {
+    color: #7E8889;
+    font-size: 11px;
+    line-height: 18px;
+    @media (min-width: $screen-md-min) {
+      font-size:12px;
+    }
+  }
+}
+

@@ -1,0 +1,311 @@
+.compareTable {
+  h1{
+    @media (min-width: $screen-md-min) {
+      float: left;
+    }
+    color: $clover;
+    small{
+      font-family: "FranklinGothicURW-Boo";
+      display: inline;
+      font-size: 36px;
+    }
+  }
+  .compareHeader{
+    padding-bottom: 10px;
+    @media (min-width: $screen-sm-min) {
+      border-bottom: 1px solid #eeeeee;
+      margin-bottom:40px;
+    }
+    @include clearfix();
+    a{
+      font-family: "FranklinGothicURW-Dem";
+      color:$charcoal;
+      text-decoration: underline;
+      line-height: 35px;
+      @media (min-width: $screen-md-min) {
+        float: right;
+      }
+
+    }
+  }
+  .swipe{
+    color: $clover;
+    font-family: "FranklinGothicURW-Boo";
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  margin: 20px 0;
+  .infoTab {
+    font-family: "FranklinGothicURW-Dem";
+    background-color: #efefef;
+    width: 155px;
+    @media (min-width: $screen-md-min) {
+      width: 195px;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: 260px;
+    }
+  }
+  .productCard {
+    overflow: visible;
+    img{
+      max-width: 130px;
+      @media (min-width: $screen-md-min) {
+        max-width: 175px;
+      }
+      @media (min-width: $screen-lg-min) {
+        max-width: 197px;
+      }
+    }
+    .removeItem{
+      position: absolute;
+      height: 10px;
+      width: 10px;
+      right:0;
+    }
+    .productDescription{
+      margin-top: 5px;
+      .name{
+        font-size: 13px;
+        line-height: 16px;
+        -webkit-line-clamp: 2;
+      }
+      .price{
+        font-size: 16px;
+      }
+      .serving{
+        display: block;
+        font-size: 11px;
+        color:#81878a;
+        i{
+          font-style: normal;
+          display: none;
+          @media (min-width: $screen-lg-min) {
+            display: inline;
+          }
+        }
+      }
+      .btn{
+        width: 130px;
+        height: 40px;
+        @media (min-width: $screen-md-min) {
+          width: 140px;
+        }
+      }
+      .btn-cartAction{
+        margin-bottom: 10px;
+        svg{
+          margin-top: -5px;
+        }
+      }
+      .btn-lightGreyGhost{
+        svg{
+          fill: #81878a;
+          margin-bottom: -2px;
+        }
+        &:hover {
+          .animate {
+            animation: animationFrames linear .5s;
+            animation-iteration-count: infinite;
+            transform-origin: 50% 50%;
+            -webkit-animation: animationFrames linear .5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-transform-origin: 50% 50%;
+            -moz-animation: animationFrames linear .5s;
+            -moz-animation-iteration-count: infinite;
+            -moz-transform-origin: 50% 50%;
+            -o-animation: animationFrames linear .5s;
+            -o-animation-iteration-count: infinite;
+            -o-transform-origin: 50% 50%;
+            -ms-animation: animationFrames linear .5s;
+            -ms-animation-iteration-count: infinite;
+            -ms-transform-origin: 50% 50%;
+            color: $clover;
+            fill: $clover;
+          }
+        }
+      }
+      .promo{
+        font-size: 13px;
+        margin-top: 0;
+        padding: 0;
+      }
+    }
+    .ratingContainer {
+      margin: 5px 0 12px;
+    }
+  }
+  .popover-title{
+    background: #ffffff;
+    span{
+      color:$charcoal;
+    }
+  }
+  .popover-content{
+    width: 190px;
+    &> div{
+      padding: 5px 0 ;
+      @include clearfix();
+      width: 100%;
+      a{
+        font-family: 'FranklinGothicURW-Dem';
+        color:$charcoal;
+        display: block;
+        float: left;
+      }
+    }
+    .borderBottom{
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    .tipIcon{
+      float: right;
+    }
+    ul{
+      padding-left: 15px;
+      li{
+        font-family: 'FranklinGothicURW-Boo';
+        padding-bottom: 5px;
+        color:$charcoal;
+      }
+    }
+  }
+  .tipIcon{
+    background: #a4a6a9;
+    line-height: 13px;
+    font-size: 11px;
+    position: relative;
+    color:#ffffff;
+    padding: 0 3px;
+    margin-left: 3px;
+    font-family: $font-family-sans-serif;
+    border-radius: 50%;
+  }
+}
+
+/***
+Responsive Flip Scroll Tables
+***/
+
+.flip-scroll * html .flip-content {
+  zoom: 1;
+}
+
+.flip-scroll *:first-child + html .flip-content {
+  zoom: 1;
+}
+.flip-scroll {
+  table {
+    display: block;
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  td {
+    display: block;
+    min-height: 1.25em;
+    text-align: left;
+    margin: 0;
+    vertical-align: top;
+  }
+  thead{
+    display: block;
+    float: left;
+    tr {
+      display: block;
+      border-top: 1px solid #d4d4d4;
+      border-left: 1px solid #d4d4d4;
+      border-right: 1px solid #d4d4d4;
+      td{
+        min-height: 40px;
+        padding: 10px;
+        font-size: 13px;
+        border-bottom: 1px solid #d4d4d4;
+      }
+    }
+  }
+  tbody{
+    display: block;
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+    background: #ffffff;
+    tr{
+      border-top: 1px solid #d4d4d4;
+      border-right: 1px solid #d4d4d4;
+      white-space: normal;
+      display: inline-block;
+      vertical-align: top;
+      width: 150px;
+      min-height: 40px;
+      @media (min-width: $screen-sm-min) {
+        display: block;
+        float: left;
+        width: 25%;
+      }
+      td{
+        height: 40px;
+        padding: 12px 10px;
+        font-size: 13px;
+        border-bottom: 1px solid #d4d4d4;
+        line-height: 16px;
+        font-family: "FranklinGothicURW-Boo";
+      }
+    }
+  }
+  .flip-content{
+    &:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
+    }
+  }
+  .product{
+    height: 397px;
+    @media (min-width: $screen-md-min) {
+      height: 440px;
+    }
+    @media (min-width: $screen-lg-min) {
+      height: 460px;
+    }
+  }
+  .use{
+    height: 100%;
+  }
+  .shipping{
+    height:52px;
+  }
+  .ingredients{
+    color: $clover;
+  }
+  .specialties{
+    .item{
+      float: left;
+      width: 17px;
+      margin-right: 4px;
+    }
+  }
+  .promo{
+    padding: 5px 10px;
+    color: #dd7e00;
+    font-family: "FranklinGothicURW-Dem";
+    svg{
+      margin-bottom: -1px;
+    }
+    @media (min-width: $screen-sm-min) {
+      padding: 12px 10px;
+    }
+  }
+}
+
+.orangeText{
+  color:$tangerine!important;
+}
+.lighterGreen{
+  color:#a2df54!important;
+}

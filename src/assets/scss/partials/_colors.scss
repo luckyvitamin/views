@@ -1,0 +1,44 @@
+$charcoalFont: $charcoal;
+$luckyBackgroundGreen: $clover;
+$borderGrey: #e3e3e3;
+$linkGreen: $clover;
+
+
+.darkGreyBg {
+  background-color: $charcoal;
+}
+.orange{
+  color:#dd7e00;
+}
+.lightGreyBg {
+  background-color: #fdfdfd;
+  @media (min-width: $screen-sm-min) {
+    background-color: $lightGrey;
+  }
+}
+
+.teal3Border{
+ border: 3px solid $teal!important;
+}
+
+.textGreen{
+  color:$clover !important;
+}
+.textRed{
+  color:#c84425;
+}
+
+.bgwhite{
+  background: #ffffff;
+}
+.greyOut{
+  cursor: default !important;
+  color:#939a9d !important;
+  *{
+    color:#939a9d !important;
+  }
+  input{
+    display: none !important;
+    cursor: default !important;
+  }
+}

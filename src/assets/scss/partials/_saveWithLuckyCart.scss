@@ -1,0 +1,85 @@
+.saveWithLuckyContainer {
+  font-family: "FranklinGothicURW-Boo";
+  padding-top: 14px;
+  padding-bottom: 36px;
+  position: relative;
+  text-align: left;
+  display: none;
+
+  .perServingPrice {
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 4px;
+  }
+
+  .currentProduct {
+    float: left;
+  }
+  .swlCarousel {
+    margin-left: 80px;
+    padding-left: 32px;
+    padding-right: 28px;
+    border-left:1px solid #eeeeee;
+
+    .luckyProductContainer {
+      text-align: left;
+      .luckyProduct {
+        width: 150px;
+        font-size: 13px;
+        line-height: 16px;
+        .price {
+          line-height: 19px;
+          padding-bottom: 6px;
+        }
+        .btn{
+          padding: 9px 6px;
+        }
+        .btn-cartAction{
+          svg{
+            margin: 0;
+          }
+        }
+      }
+    }
+    .slick-prev, .slick-next {
+      height: 50px;
+      width: 26px;
+      padding: 15px 7px;
+    }
+    .slick-next{
+      right: -9px;
+    }
+  }
+
+  .productImg img {
+    width: 69px;
+    height: auto;
+    padding-bottom: 8px;
+  }
+  @media (min-width: $screen-sm-min) {
+    .currentProduct {
+      margin-left: 12px;
+    }
+    .swlCarousel {
+      margin-left: 132px;
+      padding-left: 80px;
+
+    }
+  }
+  @media (min-width: $screen-md-min) {
+    .swlCarousel {
+      padding-left: 70px;
+
+    }
+  }
+  @media (min-width: $screen-lg-min) {
+    .currentProduct {
+      margin-left: 37px;
+    }
+    .swlCarousel {
+      margin-left: 157px;
+      padding-left: 80px;
+
+    }
+  }
+}

@@ -1,0 +1,511 @@
+.myAccountAutoship{
+  @media (max-width: $screen-sm-max) {
+    h1{font-size: 22px;}
+  }
+}
+.autoshipShipment{
+  @include clearfix();
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px dashed #dedede;
+  .autoshipHeader{
+    @include clearfix();
+    margin-bottom: 10px;
+    position: relative;
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 20px;
+    }
+    h2{
+      text-transform: uppercase;
+      color: $clover;
+      small{
+        font-family: 'FranklinGothicURW-Boo';
+        color:$charcoal;
+        font-size: 16px;
+        text-transform: none;
+      }
+    }
+    .btn{
+      height: 30px;
+      padding-top: 5px;
+      padding-bottom: 10px;
+      +.btn{
+        margin-left: 10px;
+      }
+      @media (min-width: $screen-sm-min) {
+        height: 34px;
+        padding-top: 7px;
+      }
+    }
+    .reschedule{
+      svg{
+        vertical-align: initial;
+        width: auto;
+        margin-left: 20px;
+        margin-right: 0;
+      }
+    }
+    .buttonHolder{
+      float: right;
+      margin-top: 10px;
+      position: relative;
+      .scheduleList{
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+        display: none;
+        position: absolute;
+        z-index: 400;
+        width: 100%;
+        ul{
+          font-family: 'FranklinGothicURW-Boo';
+          margin: 0;
+          li{
+            background: #fff;
+            line-height: 30px;
+            border-bottom: 1px solid #eeeeee;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+.autoshipItems{
+  @media (min-width: $screen-sm-min) {
+    margin-right: 332px;
+  }
+  @media (min-width: $screen-md-min) {
+    margin-right: 332px;
+  }
+  @include clearfix();
+  .cartItems {
+    .item {
+      float: left;
+      width: 100%;
+      overflow: hidden;
+      @include clearfix();
+      .image{
+        margin: 0;
+        width: 130px;
+      }
+      .details {
+        margin-left: 140px;
+        padding-right: 0;
+        float: none;
+        width: auto;
+        @media (min-width: $screen-md-min) {
+          margin-left: 20px;
+          padding-right: 5px;
+          width: 46%;
+          float: left;
+        }
+        .price{
+          font-size: 16px;
+          small{
+            font-size: 11px;
+            color: #898f92;
+            text-decoration: line-through;
+            font-family: 'FranklinGothicURW-Boo';
+          }
+          @media (min-width: $screen-sm-min) {
+            font-size: 24px;
+            small{
+              font-size: 14px;
+            }
+          }
+        }
+        .brand{
+          display: block;
+          color:#81878a;
+          font-size: 13px;
+          line-height: 10px;
+        }
+        .savings{
+          font-size: 11px;
+          color:#6d7275;
+          font-family: 'FranklinGothicURW-Boo';
+          @media (min-width: $screen-sm-min) {
+            font-size: 14px;
+          }
+         b{
+           color: #dd7e00;
+         }
+        }
+      }
+      .rightCol {
+        position: relative;
+        float: left;
+        margin:0;
+        padding:0;
+        width: 100%;
+        @media (min-width: $screen-sm-min) {
+          padding-left: 15px;
+        }
+        @media (min-width: $screen-md-min) {
+          width: 185px;
+          float: right;
+        }
+        .bar {
+          left: 0;
+          top: -25px;
+          display: none;
+          @media (min-width: $screen-md-min) {
+            display: block;
+          }
+        }
+        .styleSelect{
+          font-size: 14px;
+          height: 35px;
+          padding: 3px 12px;
+          margin-top: 15px;
+        }
+        .autoshipAction{
+          margin-top: 20px;
+          padding-top: 15px;
+          font-size: 14px;
+          color: #81878a;
+          margin-bottom: 0;
+          font-family: 'FranklinGothicURW-Med';
+          line-height: 1;
+          @media (max-width: $screen-xs-max) {
+            padding:0;
+            list-style: none;
+            margin-left: -5px;
+          }
+          @media (min-width: $screen-sm-min) {
+            border-top: 1px solid #eeeeee;
+            font-size: 11px;
+            line-height: 19px;
+          }
+          li {
+            padding-bottom: 5px;
+            cursor: pointer;
+            width: 105px;
+            float: left;
+            @media (min-width: $screen-sm-min) {
+              width: auto;
+              float: none;
+            }
+            svg {
+              fill: #81878a;
+              width: 20px;
+              height: 20px;
+              float: left;
+              vertical-align: top;
+              @media (min-width: $screen-sm-min) {
+                height: 16px;
+                width: 16px;
+                float: none;
+              }
+            }
+            .cancelSubscription{
+              svg{
+                fill: none;
+                stroke: #81878a;
+                stroke-width:2;
+                stroke-linecap:round;
+                stroke-linejoin:round;
+                stroke-miterlimit:10;
+              }
+            }
+            &:hover{
+              svg{
+                fill: #c74424;
+              }
+              .cancelSubscription{
+                svg{
+                  fill: none;
+                  stroke:#c74424;
+                }
+              }
+            }
+          }
+          @media (max-width: $screen-sm-max) {
+            .remove {
+              float: left;
+              margin-left: 10px;
+            }
+            .cancelItem{
+              float: right;
+              margin-right: 10px;
+            }
+          }
+        }
+
+        .quickControls{
+          width: 100%;
+        }
+        .optionFlyoutController{
+          width: 100%;
+          clear: both;
+        }
+        .quickControls{
+          margin-top: 15px;
+        }
+      }
+      @media (max-width: $screen-sm-max) {
+        padding: 15px 10px;
+      }
+      &.addMore{
+        text-align: center;
+        font-family: 'FranklinGothicURW-Med';
+        font-size: 16px;
+        line-height: 19px;
+        @include clearfix();
+        .btn{
+          display:  block;
+          width: 150px;
+          margin: 10px auto 0;
+        }
+        @media (min-width: $screen-md-min) {
+          text-align: left;
+          line-height: 39px;
+          .btn{
+            margin: 0;
+            float: right;
+          }
+        }
+      }
+    }
+  }
+  .optionFlyoutController{
+    width: 160px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    height: 45px;
+    padding: 6px 15px;
+    font-size: 14px;
+    b{
+      font-size: 11px;
+    }
+  }
+}
+.autoshipDetails{
+  @media (min-width: $screen-sm-min) {
+    width: 313px;
+    float: right;
+  }
+  .header{
+    padding: 10px 0 10px;
+  }
+  .summaryDetails{
+    .detail{
+      padding-bottom: 20px;
+    }
+    .grandTotal{
+      small{
+        display: block;
+        clear:both;
+        font-size:11px;
+        margin-top: 2px;
+        font-family: 'FranklinGothicURW-Med';
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.orderInfoBox{
+  background: #ffffff;
+  padding:20px;
+  border:1px solid #eeeeee;
+  margin-bottom: 12px;
+  font-family: 'FranklinGothicURW-Boo';
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  a{
+    font-size: 11px;
+   float: right;
+  }
+  > div{
+    margin-top: 5px;
+  }
+}
+
+
+.checkbox {
+  color: $medGrey;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: "FranklinGothicURW-Boo";
+  line-height: 32px;
+  p{
+    color: #6d7275;
+  }
+  &:before {
+    -webkit-font-smoothing: antialiased;
+    font-family: Segoe UI Symbol;
+    content: "\A0";
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 7px 10px 0 0;
+    border: 2px solid #cccccc;
+    background-color: #fff;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+  &.active {
+    &:before {
+      content: url("../images/in-stock-icon.svg");
+      border-color: $clover;
+      color: #fff;
+      line-height: 17px;
+    }
+  }
+}
+
+#paymentNew, #shippingNew, #newBillingAddress, #cancelReason{
+  display: none;
+}
+
+.labeled{
+  position: relative;
+  label{
+    display: block;
+    position: absolute;
+    font-size: 10px;
+    top: 5px;
+    left: 12px;
+  }
+  .form-control{
+    height: 40px;
+    padding: 20px 12px 6px;
+    &:focus{
+      padding: 20px 12px 6px;
+      &::-webkit-input-placeholder { /* WebKit browsers */
+        color: transparent;
+        padding: 20px 12px 6px;
+      }
+      &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: transparent;
+      }
+      &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: transparent;
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: transparent;
+      }
+        & ~ label {
+          display: block!important;
+        }
+    }
+    &:placeholder-shown {
+      padding: 6px 12px;
+      & ~ label {
+        display: none;
+      }
+    }
+  }
+}
+.luckyRewards.orderInfoBox{
+  padding: 8px 15px;
+  p{
+    line-height: 17px;
+    font-size: 14px;
+    margin: 0 0 0 30px;
+  }
+  .allOrders{
+    margin: 0;
+  }
+  @media (min-width: $screen-sm-min) {
+    width: 313px;
+    right: 0;
+    bottom: -15px;
+    position: absolute;
+  }
+}
+
+.myAccountCenter{
+  margin-top: 10px;
+  padding-top: 5px;
+  @media (min-width: $screen-sm-min) {
+    padding-top: 45px;
+    border-top: 1px solid #eeeeee;
+  }
+}
+.reactivate{
+  .btn-cartAction{
+      span {
+        display: none;
+        @media (min-width: $screen-sm-min) {
+          display: inline;
+        }
+      }
+  }
+}
+
+.accountDialog{
+  margin: 20px 10px;
+  .datepicker-container{
+    margin: 0 auto 20px;
+  }
+
+  .expired{
+    margin-top: 5px;
+  }
+  .btn + .btn{
+    margin-top: 10px;
+  }
+  .required{
+    font-size: 11px;
+  }
+  .smallDigits{
+    width: 48%;
+    float: left;
+    &.pushLeft{
+      margin-left: 10px;
+    }
+  }
+  .billingAddress{
+    color:$charcoal;
+  }
+  .billingOptions{
+    margin-top: 5px;
+  }
+  .billingOption{
+    @include clearfix();
+    > span{
+      margin-left: 10px;
+      line-height: 23px;
+    }
+    .address{
+      margin: 5px 0 5px 26px;
+      line-height: 15px;
+    }
+  }
+  .styleSelect{
+    height: 36px;
+  }
+  .form-control{
+    background-color: #ffffff;
+  }
+
+  .backBtn{
+    height: 23px;
+    line-height: 5px;
+    margin-bottom: 20px;
+  }
+  .optionList{
+    padding: 0 0 30px;
+    .option{
+      margin-top: 11px!important;
+    }
+  }
+  .classInfo{
+    margin-left: 30px;
+  }
+  .indent{
+    margin-left: 30px;
+  }
+}
+.quickControls{
+  @media (max-width: $screen-md-max) {
+    span {
+      display: block;
+      text-align: center;
+    }
+  }
+}

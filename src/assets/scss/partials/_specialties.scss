@@ -1,0 +1,22 @@
+.specialtyRow{
+  margin-right: 0;
+  margin-left: 0;
+}
+.specialtyItem {
+  font-size: 16px;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid #eeeeee;
+  min-height: 239px;
+  max-height: 239px;
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
+}
+.specialtyItem:hover {
+  background: #EEFFCE;
+}
+.specialtyHeader {
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}

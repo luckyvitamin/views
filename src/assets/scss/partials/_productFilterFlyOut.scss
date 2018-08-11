@@ -1,0 +1,126 @@
+#productFilterFlyOut{
+  -webkit-animation-name: slideDown;
+  animation-name: slideDown;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  display: none;
+  height: 100%;
+  width:290px;
+  @media (min-width: $screen-md-min) {
+    width: 350px;
+  }
+  right: 0;
+  position: fixed;
+  background-color:#ffffff;
+  top:0;
+  z-index: 7000;
+  &.opened{
+    display: block;
+  }
+  .menuScroll{
+    position: absolute;
+    padding: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    height:100%;
+    width:100%;
+
+  }
+  li{
+    height: 85px;
+    padding: 15px;
+    border-bottom: 1px solid #eeeeee;
+    cursor: pointer;
+    .productOption{
+      background: #ffffff;
+      width: 16px;
+      height: 16px;
+      border: 2px solid #ccc;
+      border-radius: 50%;
+      outline: 0;
+      box-shadow: inset 0 0 0 2px #fff;
+      -webkit-box-shadow: inset 0 0 0 2px #fff;
+      -moz-box-shadow: inset 0 0 0 2px #fff;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      cursor: pointer;
+      float: left;
+      margin: 18px 0 0;
+      float: left;
+      &:checked {
+        background: $clover;
+        border: 2px solid $clover;
+      }
+    }
+    .productOptionContainer{
+      float:left;
+      img{
+        float:left;
+        margin: 0 10px;
+      }
+      .details{
+        float:left;
+      }
+    }
+    .name{
+      font-size:16px;
+      line-height: 18px;
+      font-family: "FranklinGothicURW-Dem";
+    }
+    .price{
+      font-size:16px;
+      display: block;
+      line-height: 19px;
+      small{
+      font-size: 13px;
+        color:#81878a;
+        text-decoration: line-through;
+        font-family: "FranklinGothicURW-Boo";
+        padding-left: 5px;
+      }
+    }
+    .savings{
+      display: block;
+      color:#db7e1f;
+      font-family: "FranklinGothicURW-Dem";
+      font-size:13px;
+      line-height: 16px;
+    }
+  }
+  .header {
+    height: 45px;
+    padding-top: 14px;
+    h4{
+      margin: 0;
+    }
+    @include clearfix();
+    .close {
+      display: inline-block;
+      position: absolute;
+      right: 2px;
+      top: 12px;
+      font-family: FranklinGothicURW-Med;
+      font-size: 10px;
+      text-align: center;
+
+      button {
+        font: inherit;
+        color: inherit;
+        text-transform: none;
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+        overflow: visible;
+      }
+
+      div {
+        text-transform: uppercase;
+        text-align: center;
+        font: inherit;
+        color: $luckyBackgroundGreen;
+        margin: -8px 0 0 -5px;
+      }
+    }
+    }
+  }

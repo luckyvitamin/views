@@ -1,0 +1,66 @@
+.singleView {
+  .singleContainer{
+    margin-bottom: 10px;
+    .productCard{
+      padding: 20px;
+      border: 1px solid #eee;
+      border-bottom: 1px solid #dbdbdb;
+      background-color: #ffffff;
+      .productDescription{
+        margin-bottom: 20px;
+        .savings, .price, .autoShipText{
+          display: none;
+        }
+        .mobileAutoShip{
+          .savings, .promo, .price, .autoShipText{
+            display: block;
+          }
+          .shippingOptions {
+             .styleSelect{
+               width: 110px;
+             }
+          }
+        }
+      }
+      .photoHolder{
+        img{
+          width: 100%;
+        }
+      }
+      .quickControls{
+        .addToCart, .notifyMe{
+          span {
+            line-height: 27px;
+            small{
+              display: inline-block;
+            }
+          }
+        }
+        .addToCart{
+          &.gridBtn{
+            span {
+              font-family: "FranklinGothicURW-Dem";
+            }
+          }
+        }
+      }
+      .photoHolder{
+        width:190px;
+      }
+    }
+  }
+  .outOfStock{
+    text-align: center;
+    b{
+      color:#07b2d3;
+      vertical-align: text-bottom;
+      line-height: 17px;
+      padding-left: 5px;
+    }
+    .btn-cartAction{
+      margin-top: 10px;
+      font-size:16px;
+    }
+  }
+}
+

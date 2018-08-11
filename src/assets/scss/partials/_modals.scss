@@ -1,0 +1,548 @@
+#notifyMeModal {
+  margin: 10px;
+  .modal-header{
+    color:$lightGreen;
+    font-family: "FranklinGothicURW-Dem";
+    font-size: 18px;
+  }
+  .modal-body{
+    label{
+      font-family: "FranklinGothicURW-Dem";
+    }
+    p{
+      font-size:12px;
+      line-height: 16px;
+      color:$charcoalFont;
+      padding-top: 10px;
+    }
+    b{
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  small{
+    text-align: justify;
+  }
+}
+
+.autoShipContainer {
+  width: 330px;
+  @include box-shadow(0 5px 15px rgba(0, 0, 0, .5));
+  margin: 30px auto;
+  .modal-header{
+    border-bottom: 0;
+    padding: 10px;
+    .close{
+      margin-right: -5px;
+      padding-bottom: 5px;
+    }
+  }
+  .modal-content {
+    padding: 10px 10px 0;
+    ul {
+      padding-left: 10px;
+      list-style: none;
+      li {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0;
+        margin-bottom: 15px;
+        @include clearfix();
+        &:before {
+          float:left;
+          padding-bottom: 2px;
+          display: block;
+          padding-right: 15px;
+          content: url("../images/in-stock-icon.svg");
+        }
+      }
+    }
+    .modal-footer{
+      .close{
+        color: #a4abaf;
+        padding-right: 10px;
+      }
+      a {
+        font-family: "FranklinGothicURW-Med";
+        color:$clover;
+      }
+    }
+  }
+}
+
+.videoModal{
+.modal-header{
+  padding: 5px;
+  .close{
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+}
+}
+
+.productReviewModal{
+  .modal-header{
+    margin: 10px 10px 0;
+    padding: 0;
+    h4{
+      float: left;
+      color:$clover;
+    }
+    .close{
+      margin: 10px 0 0;
+    }
+  }
+  .modal-body{
+    font-size: 11px;
+    line-height: 14px;
+    color:#81878a;
+    textarea{
+      height: 130px;
+      margin-top: 10px;
+    }
+
+  }
+  .reviewScreen{
+    display: block;
+  }
+  .thankyou{
+    display: none;
+    h1{
+      padding-top: 10px;
+      font-family: "FranklinGothicURW-Dem";
+      color: $clover;
+    }
+    p{
+      font-size: 18px;
+      line-height: 24px;
+      font-family: "FranklinGothicURW-Boo";
+    }
+  }
+  .reviewProduct{
+    margin-bottom: 10px;
+    img{
+      float: left;
+      max-width: 60px;
+    }
+    p{
+      margin-left: 70px;
+      font-size: 18px;
+      line-height: 24px;
+      font-family: "FranklinGothicURW-Boo";
+      color:$charcoal;
+    }
+    @include clearfix;
+  }
+  label{
+    display: block;
+    font-family: "FranklinGothicURW-Dem";
+    font-size: 14px;
+    line-height: 22px;
+    color:$charcoal;
+  }
+  .reviewRating, .review{
+    position: relative;
+  }
+  .reviewer{
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: "FranklinGothicURW-Boo";
+    color:$charcoal;
+    line-height: 18px;
+    svg{
+      float: left;
+      margin: 7px 10px 0 0;
+    }
+  }
+  #errorReview{
+    display: none;
+    span{
+      font-family: "FranklinGothicURW-Dem";
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  .help-block{
+    position: absolute;
+    font-family: "FranklinGothicURW-Dem";
+    font-size: 12px;
+    bottom: -10px;
+  }
+  .tibit{
+    text-align: right;
+  }
+  .modal-footer{
+    padding:10px 0;
+    margin: 0 10px;
+    span{
+      color:#a4abaf;
+      cursor: pointer;
+      font-family: "FranklinGothicURW-Dem";
+      font-size: 14px;
+      text-transform: uppercase;
+      padding-right: 5px;
+    }
+  }
+
+}
+#backOrderModal{
+  .modal-header{
+    color:#07b2d3;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    .close{
+      margin: 0;
+    }
+  }
+  .modal-body{
+    font-family: "FranklinGothicURW-Boo";
+    .name{
+      font-size: 16px;
+      line-height: 20px;
+      color:$charcoal;
+    }
+    .notice{
+      font-size: 12px;
+      line-height: 16px;
+      padding-top: 10px;
+      span{
+        color:#07b2d3;
+      }
+      b{
+        font-size: 14px;
+        line-height: 18px;
+        display: block;
+      }
+    }
+  }
+  .backOrderForm {
+    .backOrderToggle{
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+      position: relative;
+      cursor: pointer;
+      border-top: 1px solid #eeeeee;
+      padding-top: 15px;
+      margin-top: 15px;
+    }
+      .collapsible{
+        padding-top: 20px;
+        display: none;
+      }
+      .toggleCollapse {
+        background: url(../images/plus.svg) no-repeat 96% 50%;
+        position: absolute;
+        cursor: pointer;
+        height: 14px;
+        width: 14px;
+        top: 16px;
+        right: 0;
+
+      }
+    &.open {
+      .collapsible {
+        display: block;
+      }
+      .toggleCollapse {
+        background: url(../images/minus.svg) no-repeat 96% 50%;
+      }
+    }
+    }
+}
+
+#ingredientsModal, #luckyRewardsModal{
+  .tableContainer{
+    width: auto;
+    margin: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+
+    @media (min-width: $screen-sm-min) {
+      width: 600px;
+      margin: 30px auto;
+    }
+  }
+  .modal-header{
+    color: $clover;
+    font-family: "FranklinGothicURW-Dem";
+    font-size: 18px;
+    padding: 0 0 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+    .close{
+      margin-top: 0;
+      margin-right: 0;
+    }
+    h1{
+      font-family: "FranklinGothicURW-Hea";
+      font-size: 48px;
+    }
+  }
+  .modal-content{
+    padding: 15px;
+    p{
+      font-family: "FranklinGothicURW-Boo";
+      line-height: 24px;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    .asGood{
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 10px;
+      display: block;
+    }
+  }
+  .modal-footer{
+    margin-top: 20px;
+    padding: 0;
+    padding-top: 10px;
+    border-top: 1px solid #eeeeee;
+    a{
+      padding-left: 10px;
+    }
+  }
+}
+
+.bloomModal{
+  .modal-header{
+    margin: 10px 10px 0;
+    padding: 0;
+    h4{
+      float: left;
+      color:$clover;
+    }
+    .close{
+      margin: 10px 0 0;
+    }
+  }
+  .modal-body{
+    .productImage{
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 170px;
+    }
+    .name{
+      font-family: "FranklinGothicURW-Boo";
+      font-size: 16px;
+      line-height: 20px;
+      color:$charcoal;
+    }
+    .quickDescription{
+      font-family: "FranklinGothicURW-Boo";
+      font-size: 13px;
+      line-height: 16px;
+      margin: 10px 0 0;
+      span{
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+      }
+    }
+  }
+  .modal-footer{
+    padding:10px 0;
+    margin: 0 10px;
+    span{
+      color:#a4abaf;
+      cursor: pointer;
+      font-family: "FranklinGothicURW-Dem";
+      font-size: 14px;
+      text-transform: uppercase;
+      padding-right: 5px;
+    }
+  }
+}
+#addPromoModal{
+  .modal-header{
+    margin: 10px 10px 0;
+    padding: 0;
+    h4{
+      float: left;
+      color:$clover;
+    }
+    .close{
+      margin: 10px 0 0;
+    }
+  }
+  .modal-body {
+    font-size: 14px;
+    line-height: 18px;
+    color: #81878a;
+    font-family: "FranklinGothicURW-Boo";
+
+   label{
+     color:$charcoal;
+   }
+    .form-control{
+      height: 40px;
+    }
+  }
+  .modal-footer{
+    padding:10px 0;
+    margin: 0 10px;
+    span{
+      color:#a4abaf;
+      cursor: pointer;
+      font-family: "FranklinGothicURW-Dem";
+      font-size: 14px;
+      text-transform: uppercase;
+      padding-right: 5px;
+    }
+  }
+  #errorPromo{
+    display: none;
+    font-size: 18px;
+    font-family: "FranklinGothicURW-Dem";
+    line-height: 22px;
+  }
+}
+
+#emptyCartModal{
+  .modal-header{
+    margin: 10px 10px 0;
+    padding: 0;
+    h4{
+      float: left;
+      color:#07b2d3;
+    }
+    .close{
+      margin: 10px 0 0;
+    }
+  }
+  .modal-body {
+    font-size: 13px;
+    line-height: 16px;
+    color: #81878a;
+    font-family: "FranklinGothicURW-Boo";
+    p{
+      color:$charcoal;
+      line-height: 20px;
+      font-size: 16px;
+    }
+  }
+  .modal-footer{
+    padding:10px 0;
+    margin: 0 10px;
+    span{
+      color:#a4abaf;
+      cursor: pointer;
+      font-family: "FranklinGothicURW-Dem";
+      font-size: 14px;
+      text-transform: uppercase;
+      padding-right: 5px;
+    }
+  }
+}
+
+#emailCartModal{
+  .modal-header{
+    margin: 10px 10px 0;
+    padding: 0;
+    h4{
+      float: left;
+      color:$clover;
+    }
+    .close{
+      margin: 10px 0 0;
+    }
+  }
+  .modal-body {
+    font-size: 16px;
+    line-height: 20px;
+    color: #81878a;
+    font-family: "FranklinGothicURW-Boo";
+
+    label{
+      color:$charcoal;
+    }
+    .form-control{
+      height: 40px;
+    }
+    .help-block{
+      font-size: 12px;
+      line-height: 10px;
+    }
+    #emailCartError{
+      font-size: 18px;
+      font-family: "FranklinGothicURW-Dem";
+      line-height: 20px;
+      margin-bottom: 5px;
+    }
+  }
+  .modal-footer{
+    padding:10px 0;
+    margin: 0 10px;
+    span{
+      color:#a4abaf;
+      cursor: pointer;
+      font-family: "FranklinGothicURW-Dem";
+      font-size: 14px;
+      text-transform: uppercase;
+      padding-right: 5px;
+    }
+  }
+}
+
+#luckyKidsModal{
+  .modal-header {
+    padding: 0;
+    border-bottom: 0;
+    .close {
+      margin: 8px 8px 0;
+    }
+  }
+  .modal-body{
+    color:$charcoal;
+    font-size: 16px;
+    font-family: "FranklinGothicURW-Boo";
+    padding: 15px 15px 10px;
+    line-height: 20px;
+    .logo{
+      text-align: center;
+      padding-bottom: 10px;
+    }
+  }
+  .modal-footer{
+   padding: 10px 0 0 0;
+    span{
+      color:#a4abaf;
+      cursor: pointer;
+      font-family: "FranklinGothicURW-Dem";
+      font-size: 14px;
+      text-transform: uppercase;
+      padding-left: 5px;
+    }
+    a{
+      color: $clover;
+    }
+  }
+}
+
+#addShippingAddress{
+  .required{
+    display: block;
+    text-align: right;
+    margin: -10px 0 5px;
+  }
+}
+
+.productZoom{
+  width: auto;
+  margin:10px;
+  max-height: 1000px;
+  max-width: 1100px;
+  @media (min-width: $screen-sm-min) {
+    margin: 30px;
+  }
+  @media (min-width: $screen-lg-min) {
+    margin: 60px auto;
+  }
+}
+

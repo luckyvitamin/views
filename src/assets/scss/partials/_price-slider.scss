@@ -1,0 +1,115 @@
+.price-slider-wrapper {
+  padding: 20px;
+  margin-bottom: 34px;
+
+  #price-slider {
+    .ui-widget.ui-widget-content {
+      border: 1px solid #c5c5c5;
+    }
+
+    &.ui-widget-content {
+      border: none !important;
+      background: #dddddd;
+      color: #333333;
+
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 7px;
+        width: 20px;
+        border-radius: 5px;
+        background: #dddddd;
+      }
+
+      &:before {
+        left: -4%;
+      }
+      &:after {
+        right: -4%;
+      }
+    }
+
+    &.ui-corner-all {
+      border-radius: 5px;
+    }
+
+    &.ui-slider-horizontal {
+      height: 7px;
+      border-radius: 5px;
+    }
+
+    &.ui-slider {
+      position: relative;
+      text-align: left;
+    }
+
+    &.ui-widget {
+      font-family: Arial,Helvetica,sans-serif;
+      font-size: 24px;
+    }
+
+    div {
+      &.ui-slider-range {
+        position: absolute;
+        z-index: 1;
+        font-size: .7em;
+        display: block;
+        border: 0;
+        background-position: 0 0;
+        top: 0;
+        height: 100%;
+      }
+
+      &.ui-widget-header {
+        background: #7ac769;
+        font-weight: bold;
+      }
+    }
+
+    span:not(.slider-price) {
+      &.ui-slider-handle {
+        background-color: #f8f8f8;
+        position: absolute;
+        top: -10px;
+        border-radius: 20px;
+        z-index: 2;
+        width: 28px;
+        height: 28px;
+        cursor: default;
+        -ms-touch-action: none;
+        touch-action: none;
+        margin-left: -0.6em;
+      }
+      &.ui-state-default {
+        border: 1px solid #d3d3d3;
+        font-weight: normal;
+      }
+
+      &:after {
+        background: url(../images/arrow-price.svg) bottom center no-repeat;
+        content: '';
+        width: 12px;
+        height: 6px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-53%, 95%);
+      }
+    }
+
+    span.slider-price {
+      position: absolute;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:11px;
+      line-height: 11px;
+      color: #81878a;
+      bottom: -32px;
+      transform: translateX(-50%);
+
+      &.active {
+        color: $charcoal
+      }
+    }
+  }
+}

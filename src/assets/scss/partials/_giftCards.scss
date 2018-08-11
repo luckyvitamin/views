@@ -1,0 +1,77 @@
+.greenBg {
+  margin-top: 10px;
+  background: radial-gradient(#6ab95c, #81c772);
+  color: #ffffff;
+  @media (max-width: 992px) {
+    margin: 0 -10px;
+    padding: 0 10px;
+  }
+}
+.giftCardBody {
+  padding-top: 40px;
+  font-weight: 300;
+}
+.giftCardBanner {
+  text-align: center;
+  padding-bottom: 10px;
+  p {
+    font-size: 22px;
+    font-weight: 300;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+  p.bannerSuffix {
+    font-size: 26px;
+    font-weight: 500;
+    font-size: 26px;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+    span {
+      color: #C5E86C;  // TODO Is there no color variable for this green?
+    }
+  }
+}
+#giftCardBannerImage img {
+  max-width: 100%;
+}
+.giftCardOr {
+  text-align: center;
+  padding-top: 80px;
+  @media (max-width: 768px) {
+    padding: 30px 0;
+  }
+}
+.cardCopy {
+  text-align: center;
+  max-width: 312px;  // Same as width of card image
+  margin: 0 auto;
+  padding-bottom: 15px;
+  font-size: 15px;
+  h4 {
+    color: #ffffff;
+  }
+}
+.cardCopySubHeader {
+  font-size: 24px;
+  font-weight: 400;
+}
+.classicCard,
+.eCard {
+  text-align: center;
+  img {
+    padding: 5px 0;
+    max-width: 100%;
+  }
+}
+.eCard {
+  padding-bottom: 40px;
+}
+.aboutGiftCards {
+  line-height: 1.5em;
+  padding-top: 20px;
+  h4 {
+    color: $clover;
+  }
+}

@@ -1,0 +1,114 @@
+//
+// Panels
+// --------------------------------------------------
+
+// Base class
+.panel {
+  margin-bottom: $line-height-computed;
+  background-color: $panel-bg;
+  border: 1px solid #eee;
+  img {
+    width: 100%;
+  }
+}
+
+// Panel contents
+.panel-body {
+  margin: 5px 20px;
+  height: 100px;
+  border-bottom: 1px solid #eeeeee;
+  @include clearfix;
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    @media (min-width: $screen-sm-min) {
+      font-size: 15px;
+      line-height: 24px;
+    }
+    color: #81878a;
+    font-family: "FranklinGothicURW-Boo";
+  }
+}
+
+.video {
+  position: absolute;
+  opacity: 0.9;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  @include border-bottom-radius(30px);
+  @include border-top-radius(30px);
+  background: #ffffff;
+  top: 20px;
+  left: 30px;
+  width: 45px;
+  height: 45px;
+  padding: 15px 17px;
+}
+
+.date {
+  background-color: $softGreen;
+  font-family: "FranklinGothicURW-Boo";
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 17px;
+  padding: 15px 5px;
+  width: 96px;
+  height: 96px;
+  top: 60px;
+  @media (min-width: $screen-sm-min) {
+    top: 120px;
+  }
+  @media (min-width: $screen-lg-min) {
+    top: 107px;
+  }
+  right: 25px;
+  position: absolute;
+  b {
+    display: block;
+  }
+}
+
+// Optional heading
+.panel-heading {
+  padding: 25px 20px 0;
+  border-bottom: 1px solid transparent;
+  .shortCall {
+    color: $clover;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "FranklinGothicURW-Dem";
+  }
+}
+
+.panel-title {
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  color: $charcoal;
+  font-family: "FranklinGothicURW-Boo";
+  > a,
+  > small,
+  > .small,
+  > small > a,
+  > .small > a {
+    color: inherit;
+  }
+  @media (min-width: $screen-sm-min) {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+// Optional footer (stays gray in every modifier class)
+.panel-footer {
+  text-align: right;
+  padding: 0 20px 10px;
+  a {
+    font-family: "FranklinGothicURW-Dem";
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 24px;
+    color: $clover;
+  }
+}

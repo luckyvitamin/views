@@ -1,0 +1,85 @@
+@import "../mixins/general";
+//TODO Determing what darken we can use to not have to take all state colors
+@mixin makeButton ($bgColor,$borderColor,$fontColor,$hoverBgColor,$activeBgColor, $altFontColor, $borderBottomColor: transparent, $font: 'FranklinGothicURW-Med', $font-size: 14px) {
+    font-family: $font;
+    font-size:$font-size;
+    color: $fontColor;
+    background-color: $bgColor;
+    border-color:     $borderColor;
+    cursor: pointer;
+    border-bottom: 1px solid $borderBottomColor;
+    padding-top:9px;
+    padding-bottom:9px;
+    &:hover {
+      color: $altFontColor;
+      background: $hoverBgColor; /* Old browsers */
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.11);
+      @include gradient-vertical($bgColor, $activeBgColor);
+    }
+    &:active{
+      color: $altFontColor;
+      background: $activeBgColor;
+      box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.3);
+    }
+    &:focus{
+      color: $altFontColor;
+      outline: none !important;
+    }
+    &.processing{
+      background-color: #cacaca;
+      border-color:     #cacaca;
+      background-position: 15px 6px;
+      border-bottom: 1px solid #cacaca;
+      background-image: url(../images/loading-clover-grow.gif);
+      background-size: 20px;
+      background-repeat: no-repeat;
+      svg{
+        display: none;
+      }
+      @media (min-width: $screen-sm-min) {
+        background-position: 45px 6px;
+      }
+    }
+}
+
+@mixin makeButtonTopGradient ($bgColor,$borderColor,$fontColor,$hoverBgColor,$activeBgColor, $altFontColor, $borderBottomColor: transparent, $font: 'FranklinGothicURW-Med') {
+  font-family: $font;
+  font-size:14px;
+  color: $fontColor;
+  background-color: $bgColor;
+  border-color:     $borderColor;
+  cursor: pointer;
+  border-bottom: 1px solid $borderBottomColor;
+  padding-top:9px;
+  padding-bottom:9px;
+  &:hover {
+    color: $altFontColor;
+    background: $hoverBgColor; /* Old browsers */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.11);
+    @include gradient-vertical($bgColor, $activeBgColor);
+  }
+  &:active{
+    color: $altFontColor;
+    background: $activeBgColor;
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.3);
+  }
+  &:focus{
+    color: $altFontColor;
+    outline: none !important;
+  }
+  &.processing{
+    background-color: #cacaca;
+    border-color:     #cacaca;
+    background-position: 15px 6px;
+    border-bottom: 1px solid #cacaca;
+    background-image: url(../images/loading-clover-grow.gif);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    svg{
+      display: none;
+    }
+    @media (min-width: $screen-sm-min) {
+      background-position: 45px 6px;
+    }
+  }
+}

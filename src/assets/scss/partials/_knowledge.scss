@@ -1,0 +1,82 @@
+#knowledgeCenter{
+ @include clearfix;
+}
+#knowledgeSearch{
+ .knowledgeBlock{
+   margin: 0 0 15px 0;
+   width: 100%;
+    .panel-heading{
+      .panel-title{
+        display: inline-block;
+      }
+    }
+   .panel-body{
+     height: auto;
+   }
+ }
+
+}
+.knowledgeBlock {
+  width:245px;
+  margin-left: 4px;
+  margin-right: 4px;
+  float: left;
+  @media (min-width: $screen-sm-min) {
+    width: 48%;
+    margin-left: 7px;
+    margin-right: 8px;
+    float: left;
+    margin-bottom: 10px;
+  }
+  .panel {
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom:0;
+  }
+  position: relative;
+}
+.storyContainer {
+  h2{
+    font-size: 28px;
+    padding-bottom: 5px;
+    color: $clover;
+    font-family: "FranklinGothicURW-Hea";
+
+  }
+  p{
+    font-size: 16px;
+    line-height:24px;
+    @media (min-width: $screen-sm-min) {
+      line-height: 30px;
+    }
+    color: $charcoal;
+    font-family: "FranklinGothicURW-Boo";
+    a{
+      color: $clover;
+      text-transform: uppercase;
+    }
+  }
+  @include clearfix;
+  .imageHolder {
+    text-align: center;
+    padding-bottom: 20px;
+    @media (min-width: $screen-md-min) {
+      text-align: right;
+    }
+    img{
+      border: 1px solid #eeeeee;
+      width: 100%;
+      max-width: 768px;
+    }
+  }
+  .signature{
+    display: none;
+    margin-bottom:50px;
+    @media (min-width: $screen-sm-min) {
+      display: block;
+      text-align: right;
+    }
+    @media (min-width: $screen-md-min) {
+      text-align: center;
+    }
+  }
+}

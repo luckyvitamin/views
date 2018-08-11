@@ -1,0 +1,203 @@
+.topicPage{
+  margin-left: -7px;
+  margin-right: -8px;
+}
+.topicWrapper{
+  .departmentContainer {
+    .departmentBlock {
+      @media (max-width: $screen-sm-max) {
+        margin-bottom: 0;
+        .list {
+          text-align: center;
+          padding: 5px;
+          font-size: 13px;
+          min-height: 50px;
+        }
+        .footer {
+          display: none;
+        }
+      }
+      @media (min-width: $screen-sm-min) {
+        margin-bottom: 0;
+      }
+  }
+  }
+}
+
+.topicFilterControls{
+  margin-top: 20px;
+  border-bottom: 1px solid #dbdbdb;
+  @media (min-width: $screen-sm-min) {
+   position: absolute;
+    right: 10px;
+    top: 0;
+    border-bottom: 0;
+    margin: 0;
+  }
+  li{
+    font-family: "FranklinGothicURW-Dem";
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+    color:$clover;
+    padding-bottom: 3px;
+    &.active, :hover{
+      padding-bottom: 0;
+      color:$charcoal;
+      border-bottom: 3px solid $clover;
+    }
+  }
+}
+.keywordFilter{
+  position: relative;
+  @media (min-width: $screen-sm-min) {
+    margin: 15px 0;
+  }
+  .form-group{
+    .searchIcon{
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      margin-top: -8px;
+    }
+    .closeFilter{
+      position: absolute;
+      right: 20%;
+      width: 40px;
+      text-align: center;
+      display: none;
+      height: 40px;
+      top: 50%;
+      padding: 14px;
+      margin-top: -20px;
+      @media (min-width: $screen-sm-min) {
+        right: 10%;
+      }
+      @media (min-width: $screen-md-min) {
+        right: 5%;
+      }
+    }
+  }
+  .filterSearch{
+    &.open{
+      width: 80%;
+    }
+    @media (min-width: $screen-sm-min) {
+      &.open{
+        width: 90%;
+      }
+    }
+    @media (min-width: $screen-md-min) {
+      &.open{
+        width: 95%;
+      }
+    }
+  }
+  .cancelFilter{
+    display: none;
+    font-size: 12px;
+    font-family: "FranklinGothicURW-Med";
+    text-transform: uppercase;
+    color: #81878a;
+    letter-spacing: .03em;
+    position: absolute;
+    right: 5px;
+    top: 17px;
+  }
+}
+
+.topicList {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  @include clearfix();
+  padding: 15px 5px;
+  @media (min-width: $screen-sm-min) {
+    border: 0;
+    padding: 0;
+  }
+  h4 {
+    font-size: 14px;
+    font-family: "FranklinGothicURW-Dem";
+    margin: 0 0 10px;
+  }
+  .topicSections{
+    column-count: 2;
+    column-gap: 5px;
+    list-style: none;
+    padding: 0 5px;
+    @media (min-width: $screen-sm-min) {
+      column-count: 3;
+      column-gap: 15px;
+    }
+    @media (min-width: $screen-md-min) {
+      column-count: 4;
+    }
+    li{
+      break-inside: avoid;
+    }
+  }
+  .topic, .topicResult {
+    margin: 0 0 10px;
+    padding: 0 0 0 15px;
+    list-style: disc;
+     li {
+      color: $clover;
+      padding-bottom: 10px;
+      break-inside: avoid;
+      a {
+        font-family: "FranklinGothicURW-Med";
+        color: $clover;
+        line-height: 16px;
+        font-size: 13px;
+      }
+    }
+  }
+  @media (min-width: $screen-sm-min) {
+    h4 {
+      font-size: 18px;
+    }
+    li{
+      a{
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.characterFilter{
+  display: none;
+  @include clearfix();
+  margin: 0 0 15px -5px;
+  @media (min-width: $screen-sm-min) {
+    margin: 15px 0 15px -5px;
+  }
+  &> span{
+    display: block;
+    float: left ;
+    height: 39px;
+    width: 39px;
+    border: 1px solid #d4d4d4;
+    @include border-top-radius(4px);
+    @include border-bottom-radius(4px);
+    color:#6d7275;
+    font-family: "FranklinGothicURW-Dem";
+    font-size: 14px;
+    line-height: 39px;
+    text-align: center;
+    cursor: pointer;
+    background: #ffffff;
+    margin: 5px 5px 0;
+    @media (min-width: $screen-lg-min) {
+      margin: 5px 3px 0;
+    }
+    &.active{
+      color: $clover;
+      border-color: $clover;
+    }
+    &.inactive{
+      background-color: #ebebeb;
+      cursor: not-allowed;
+      color:#6d7275;
+    }
+  }
+}

@@ -1,0 +1,677 @@
+.filterWrapper {
+  display: none;
+
+  @media (max-width: $screen-md-min - 1) {
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    width: 304px;
+    left: -304px;
+    background: #ffffff;
+    z-index: 50000;
+    overflow: auto;
+  }
+  @media (min-width: $screen-md-min) {
+    width: 21.3293%;
+    display: block;
+    float: left;
+    margin-right: 20px;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: 17.3384%;
+  }
+
+  .buttonsContainer {
+    display: none;
+
+    @media (max-width: $screen-md-min - 1) {
+      display: block;
+      position: fixed;
+      overflow: hidden;
+      top: 0;
+      left: -304px;
+      width: 304px;
+      z-index: 10001;
+      padding: 5px 10px;
+      border-bottom: 1px solid #e2e2e2;
+      background-color: #FFFFFF;
+      box-shadow: 0 2px 7px rgba(0, 0, 0, 0.14);
+
+      a {
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 3px;
+        font-family: "FranklinGothicURW-Dem";
+        float: left;
+
+      }
+
+      .clearAll {
+        font-size: 14px;
+        color: #6d7275;
+        background-color: #f8f8f8;
+        border-color: #e4e4e4;
+        border-bottom: 1px solid #d4d4d4;
+        margin-right: 10px;
+        padding: 9.5px 41px;
+
+      }
+      .done {
+        font-size: 16px;
+        color: #ffffff;
+        background-color: $clover;
+        border-color: #3da026;
+        border-bottom: 1px solid #32821f;
+        padding: 8px 50px;
+
+        &:hover {
+          background-color: $clover - 10%;
+        }
+      }
+    }
+  }
+}
+
+.topBlock {
+  position: relative;
+  .video {
+    top: 10px;
+    left: 10px;
+    width: 35px;
+    height: 35px;
+    padding: 10px 13px;
+  }
+  .label {
+    text-align: center;
+    border: 1px solid #eee;
+    font-family: "FranklinGothicURW-Dem";
+    font-size: 14px;
+    line-height: 34px;
+  }
+  p {
+    padding: 15px 15px 0;
+    font-family: "FranklinGothicURW-Boo";
+    font-size: 16px;
+    line-height: 20px;
+    b {
+      display: block;
+      font-family: "FranklinGothicURW-Dem";
+    }
+    a {
+      font-family: "FranklinGothicURW-Dem";
+      color: $clover;
+      display: block;
+      text-align: right;
+      font-size: 12px;
+      line-height: 24px;
+      padding-top: 10px;
+      text-transform: uppercase;
+      &:hover {
+        color: $clover;
+      }
+    }
+  }
+  display: none;
+  @media (min-width: $screen-sm-min) {
+    display: block;
+  }
+}
+
+.filterMenu {
+  position: relative;
+  @media (max-width: $screen-md-min - 1) {
+    padding-top: 50px;
+  }
+  li {
+    position: relative;
+    input {
+      margin-bottom: 15px;
+    }
+
+    .search-icon {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      right: 8px;
+      top: 35px;
+
+      @media (max-width: $screen-md-min) {
+        right: 23px;
+      }
+    }
+
+    .clearSearch {
+      top: 22px;
+      right: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        a {
+          color: $clover;
+          font-size: 12px;
+          line-height: 36px;
+          font-family: "FranklinGothicURW-Boo";
+        }
+      }
+    }
+
+    &.open {
+      span.toggleCollapse {
+        background: url(../images/minus.svg) no-repeat 96% 50%;
+        position: absolute;
+        cursor: pointer;
+        height: 14px;
+        width: 14px;
+        right: 0;
+        top: 0;
+
+        @media (max-width: $screen-md-min) {
+          right: 15px;
+        }
+      }
+      .collapsibleContent {
+        display: block;
+      }
+    }
+
+    span.toggleCollapse {
+      background: url(../images/plus.svg) no-repeat 96% 50%;
+      position: absolute;
+      cursor: pointer;
+      height: 14px;
+      width: 14px;
+      right: 0;
+      top: 0;
+
+      @media (max-width: $screen-md-min) {
+        right: 15px;
+      }
+    }
+
+    .collapsibleContent {
+      display: none;
+    }
+  }
+  list-style: none;
+  padding: 0;
+  .filterContainer {
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    @media (max-width: $screen-md-min) {
+      padding: 0 15px;
+    }
+
+    h5 {
+      font-family: "FranklinGothicURW-Dem";
+      text-transform: uppercase;
+    }
+    .dropdown-toggle {
+      display: none;
+    }
+
+    div.stars {
+      input {
+        background: #ffffff;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #ccc;
+        border-radius: 50%;
+        outline: 0;
+        box-shadow: inset 0 0 0 2px #fff;
+        -webkit-box-shadow: inset 0 0 0 2px #fff;
+        -moz-box-shadow: inset 0 0 0 2px #fff;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        cursor: pointer;
+        float: left;
+        margin: 7px 6px 0 0;
+        &:checked {
+          background: $clover;
+          border: 2px solid $clover;
+        }
+      }
+      label {
+        font-family: FranklinGothicURW-Boo;
+        font-size: 14px;
+        line-height: 32px;
+        color: #81878a;
+        padding-left: 5px;
+
+        .ratingHolder {
+          display: inline-block;
+          width: 84px;
+          height: 13px;
+          margin-left: -2px;
+          margin-right: 4px;
+          background-image: url(../images/rating-empty.svg);
+          background-repeat: repeat-x;
+          .rating {
+            display: block;
+            height: 14px;
+            background-image: url("../images/rating-filled.svg");
+            background-repeat: repeat-x;
+          }
+        }
+
+        ul {
+          display: inline-block;
+        }
+
+        li.filled, li.empty {
+          display: inline-block;
+          width: 17px;
+          height: 13px;
+          float: left;
+        }
+
+        li.filled {
+          background-image: url("../images/rating-filled.svg");
+        }
+        li.empty {
+          background-image: url("../images/rating-empty.svg");
+        }
+
+        &:hover {
+          color: $medGrey !important;
+        }
+
+        &:before {
+          display: none;
+        }
+      }
+
+      label.active {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+  label {
+    color: $medGrey;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: "FranklinGothicURW-Boo";
+    line-height: 32px;
+    &:before {
+      -webkit-font-smoothing: antialiased;
+      font-family: Segoe UI Symbol;
+      content: "\A0";
+      float: left;
+      width: 16px;
+      height: 16px;
+      margin: 7px 10px 0 0;
+      border: 2px solid #cccccc;
+      background-color: #fff;
+      color: #fff;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+    }
+    &:hover {
+      color: $clover;
+      &:before {
+        border-color: $clover;
+      }
+    }
+    &.active {
+      &:before {
+        content: url("../images/in-stock-icon.svg");
+        border-color: $clover;
+        color: #fff;
+        line-height: 14px;
+      }
+    }
+  }
+}
+
+.listWrapper {
+  width: 100%;
+  float: left;
+  @media (min-width: $screen-md-min) {
+    padding-left: 15px;
+    width: 75%;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: 81%;
+  }
+
+  .listControls {
+
+    .filterButton {
+      a {
+        font-family: "FranklinGothicURW-Dem";
+        font-size: 16px;
+        line-height: 14px;
+        color: #ffffff;
+        background-color: $clover;
+        border-color: #3da026;
+        cursor: pointer;
+        border-bottom: 1px solid #32821f;
+        padding: 12.5px 15px;
+        text-align: center;
+        display: none;
+        border-radius: 3px;
+        text-decoration: none;
+        margin-right: 12px;
+        margin-bottom: 12px;
+      }
+    }
+
+    .gridSwitcher {
+      float: left;
+      padding-top: 10px;
+      display: none;
+      @media (min-width: $screen-sm-min) {
+        display: block;
+      }
+      label {
+        color: $clover;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-right: 10px;
+        vertical-align: top;
+        padding-top: 1px;
+      }
+      .icon {
+        vertical-align: top;
+        display: inline-block;
+        padding-right: 13px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+    .gridSequence {
+      float: right;
+      margin: 10px 10px 0 0;
+      text-align: center;
+      text-transform: uppercase;
+      color: $clover;
+      font-size: 10px;
+      font-family: "FranklinGothicURW-Med";
+      .icon {
+        display: none;
+        &.active {
+          display: block;
+        }
+      }
+      @media (min-width: $screen-sm-min) {
+        display: none;
+      }
+    }
+
+    .sortBy {
+      float: right;
+      width: 180px;
+      margin-bottom: 20px;
+      label {
+        float: left;
+        padding-top: 12px;
+      }
+      select {
+        float: right;
+        @media (min-width: $screen-sm-min) {
+          width: 75%;
+          display: block;
+        }
+      }
+      @media (min-width: $screen-sm-min) {
+        width: 250px;
+      }
+    }
+    @include clearfix();
+    margin: 10px 0 0;
+    @media (max-width: $screen-md-min) {
+      margin: 25px 0 0;
+      .filterButton {
+        display: block;
+        float: left;
+        a {
+          display: block;
+        }
+      }
+
+      .gridSwitcher {
+        float: right;
+      }
+
+      .sortBy {
+        float: left;
+
+        label {
+          display: none;
+        }
+        .form-control {
+          float: none;
+
+        }
+      }
+    }
+  }
+
+  .brandPromo {
+    img {
+      width: 100%;
+      margin-top: 25px;
+    }
+  }
+}
+.brandHeader {
+  @include clearfix();
+
+  .brandLogo {
+    display: none;
+    @media (min-width: $screen-sm-min) {
+      display: block;
+    }
+    float: left;
+    border: 1px solid #eeeeee;
+    border-bottom: 1px solid #d4d4d4;
+  }
+
+  .brandText {
+    float: left;
+    margin: 10px 0 0;
+    width: 100%;
+    display: block;
+    font-family: 'FranklinGothicURW-Boo';
+    line-height: 20px;
+    letter-spacing: .001em;
+
+    @media (min-width: $screen-sm-min) {
+      margin-left: 25px;
+      width: 75%;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: 80%;
+    }
+
+    p {
+      font-size: 14px;
+      color: $medGrey;
+    }
+
+    span {
+      font-size: 20px;
+      color: $charcoal;
+    }
+
+    a {
+      color: $clover;
+      font-size: 12px;
+      font-family: 'FranklinGothicURW-Dem';
+    }
+  }
+}
+.titleBar {
+  padding-bottom: 15px;
+  @include clearfix();
+  .pull-left, .pull-right {
+    width: 100%;
+  }
+  @media (min-width: $screen-sm-min) {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eeeeee;
+  }
+  @media (min-width: $screen-md-min) {
+    .pull-left, .pull-right {
+      width: auto;
+    }
+  }
+
+  h1 {
+    color: $clover;
+    font-size: 24px;
+    @media (min-width: $screen-sm-min) {
+      font-size: 36px;
+    }
+  }
+  a {
+    color: $clover;
+  }
+
+  font-family: "FranklinGothicURW-Dem";
+  color: $charcoal;
+  .didYouMean {
+    display: block;
+    font-size: 13px;
+    line-height: 24px;
+    @media (min-width: $screen-sm-min) {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+  .relatedSearch {
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'FranklinGothicURW-Boo';
+    @media (min-width: $screen-sm-min) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  .pill {
+    width: 100%;
+    margin-top: 10px;
+    @include clearfix;
+    @include border-left-radius(3px);
+    @include border-right-radius(3px);
+    border: 1px solid #e4e4e4;
+    font-family: 'FranklinGothicURW-Boo';
+    font-size: 16px;
+    color: $charcoal;
+    display: block;
+    @media (min-width: $screen-md-min) {
+      width: 325px;
+    }
+    a {
+      color: $charcoal;
+      display: block;
+      width: 50%;
+      padding: 10px 8px 8px;
+      background: #ffffff;
+      @media (min-width: $screen-md-min) {
+        padding: 10px 20px 8px;
+      }
+      float: left;
+      &:hover, :active {
+        @include opacity(.6);
+        text-decoration: none;
+      }
+      &.selected {
+        background-color: #e4e4e4;
+        color: $charcoal;
+        @include opacity(1);
+      }
+      svg {
+        display: inline-block;
+        float: left;
+        height: 20px;
+        @media (min-width: $screen-sm-min) {
+          margin-right: 10px;
+          height: auto;
+        }
+      }
+      @media (min-width: $screen-sm-min) {
+        padding: 14px 20px 8px;
+      }
+    }
+    b {
+      font-family: 'FranklinGothicURW-Hea';
+      font-size: 14px;
+      line-height: 16px;
+      padding-right: 3px;
+      @media (min-width: $screen-sm-min) {
+        font-size: 24px;
+        line-height: 16px;
+        display: block;
+      }
+
+    }
+  }
+  .topBlock {
+    display: block;
+    margin-top: 15px;
+    border-bottom: 1px solid #dbdbdb;
+    .panel {
+      background: none;
+      border: 0;
+      .video {
+        position: static;
+        margin: 0 10px;
+        float: left;
+      }
+      .videoLink {
+        margin-top: 11px;
+        display: inline-block;
+      }
+    }
+    @media (min-width: $screen-md-min) {
+      display: none;
+    }
+
+    p {
+      svg {
+        float: left;
+        height: 55px;
+        width: 35px;
+        margin: 10px;
+        margin-left: 0;
+      }
+      a {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.loadMore {
+  margin-top: 10px;
+  font-size: 18px;
+  svg {
+    margin-left: 5px;
+  }
+  &.processing {
+    background-position: 43% 10px;
+    color: #919495;
+  }
+}
+
+.anchor {
+  display: block;
+  height: 50px; /*same height as header*/
+  margin-top: -50px; /*same height as header*/
+  visibility: hidden;
+}

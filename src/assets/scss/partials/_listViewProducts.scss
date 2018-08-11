@@ -1,0 +1,343 @@
+.listView {
+  .listContainer {
+    margin-bottom: 15px;
+    .productCard {
+      padding: 10px;
+      border: 1px solid #eee;
+      border-bottom: 1px solid #dbdbdb;
+      background-color: #fff;
+      @include clearfix();
+      @media (min-width: $screen-sm-min) {
+        padding: 20px;
+      }
+      .ratingContainer {
+        margin: 10px 0 10px;
+        @media (min-width: $screen-sm-min) {
+          margin: 10px 0 20px;
+        }
+        .count {
+          line-height: 14px;
+        }
+      }
+    }
+    .photoHolder {
+      width: 48%;
+      float: left;
+      @media (min-width: $screen-sm-min) {
+        width: 20%;
+        margin-bottom: 0;
+      }
+      .sponsored{
+        top: -9px;
+        z-index:100;
+        @media (min-width: $screen-sm-min) {
+          top:-13px;
+        }
+      }
+      a {
+        position: relative;
+        display: block;
+      }
+      .productMenu {
+        margin-top: 10px;
+        margin-bottom: 30px;
+
+        .compare {
+          position: relative;
+          margin-bottom: 8px;
+
+          &:before {
+            -webkit-font-smoothing: antialiased;
+            content: "\A0";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-320%, -58%);
+            @media (min-width: $screen-sm-min) {
+              transform: translate(-345%, -50%);
+            }
+            width: 16px;
+            height: 16px;
+            border: 2px solid #cccccc;
+            background-color: #fff;
+            color: #fff;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+          }
+
+          &.selected {
+            &:before {
+              content:  url("../images/in-stock-icon.svg");
+              width: 16px;
+              height: 16px;
+              line-height: 14px;
+              border-color: $clover;
+              color: #fff;
+            }
+          }
+        }
+        .popover-content{
+          width: 190px;
+          &> div{
+            padding: 5px 0 ;
+            @include clearfix();
+            width: 100%;
+            a{
+              font-family: 'FranklinGothicURW-Dem';
+              color:$charcoal;
+              display: block;
+              float: left;
+            }
+          }
+          .borderBottom{
+            border-bottom: 1px solid #eeeeee;
+          }
+
+          .tipIcon{
+            float: right;
+          }
+        }
+        .addToList{
+        }
+        span {
+          color: $medGrey;
+          text-align: center;
+          cursor: pointer;
+          font-family: 'FranklinGothicURW-Boo';
+          font-size: 13px;
+          @media (min-width: $screen-sm-min) {
+            font-size: 14px;
+          }
+          line-height: 20px;
+          display: block;
+          svg {
+            margin-right: 5px;
+            vertical-align: text-top;
+            fill: #b5b5b5;
+          }
+          div{
+            display: inline-block;
+          }
+          &:hover {
+            .animate {
+              animation: animationFrames linear .5s;
+              animation-iteration-count: infinite;
+              transform-origin: 50% 50%;
+              -webkit-animation: animationFrames linear .5s;
+              -webkit-animation-iteration-count: infinite;
+              -webkit-transform-origin: 50% 50%;
+              -moz-animation: animationFrames linear .5s;
+              -moz-animation-iteration-count: infinite;
+              -moz-transform-origin: 50% 50%;
+              -o-animation: animationFrames linear .5s;
+              -o-animation-iteration-count: infinite;
+              -o-transform-origin: 50% 50%;
+              -ms-animation: animationFrames linear .5s;
+              -ms-animation-iteration-count: infinite;
+              -ms-transform-origin: 50% 50%;
+            }
+            svg{
+              color: $clover;
+              fill: $clover;
+            }
+          }
+        }
+      }
+      img {
+        width: 100%;
+      }
+      .productSlider {
+        bottom: 80px;
+      }
+    }
+    .productDescription {
+      float: right;
+      width: 48%;
+      @media (min-width: $screen-sm-min) {
+        float: left;
+
+        margin-left: 40px;
+        width: 41.4814%;
+      }
+      @media (min-width: $screen-md-min) {
+        margin-left: 30px;
+      }
+      @media (min-width: $screen-lg-min) {
+        margin-left: 50px;
+      }
+      .name {
+        font-size: 13px;
+        margin-bottom: 6px;
+        @media (min-width: $screen-sm-min) {
+          font-size: 18px;
+          margin-bottom:0;
+        }
+      }
+      .item_number{
+        @media (min-width: $screen-sm-min) {
+          display: block;
+        }
+      }
+      .price, .autoShipTextHolder{
+        display: none;
+      }
+      .mobileAutoShip {
+        display: block;
+        .promo, .price, .autoShipTextHolder {
+          display: block;
+        }
+        @media (min-width: $screen-sm-min) {
+          display: none;
+        }
+      }
+      @media (min-width: $screen-sm-min) {
+         .price, .autoShipTextHolder {
+          display: block;
+        }
+      }
+
+      .promo {
+        .tipIcon {
+          display: none;
+          @media (min-width: $screen-sm-min) {
+            display: inline;
+          }
+        }
+      }
+    }
+    .quickControls {
+      float: right;
+      width: 48%;
+      @media (min-width: $screen-sm-min) {
+        width: 230px;
+      }
+      .controlCta {
+        margin-top: 10px;
+        @media (min-width: $screen-sm-min) {
+          margin-top: 0;
+          padding: 15px 0 0 20px;
+        }
+      }
+      .saveTime {
+        position: relative;
+        color: $charcoal;
+        font-size: 12px;
+        cursor: default;
+        b {
+          color: $clover;
+          font-size: 16px;
+        }
+        padding: 15px 0 0 20px;
+        .addToCart {
+          margin: 10px 0;
+          line-height: 15px;
+          span {
+            border: none;
+            padding: 0;
+            small {
+              color: #FFFFFF;
+            }
+          }
+        }
+        div {
+          text-align: center;
+          padding-bottom: 10px;
+          color: $clover;
+          svg {
+            position: relative;
+            left: -2px;
+            bottom: -2px;
+          }
+          border-bottom: 1px solid #eeeeee;
+        }
+        & + .controlCta {
+          .addToCart span {
+            padding: 0;
+            border: 0;
+            line-height: 23px;
+          }
+        }
+      }
+      .addToCart, .notifyMe {
+        line-height: 19px;
+        font-size: 14px;
+        @media (min-width: $screen-sm-min) {
+          font-size: 16px;
+          line-height: 26px;
+        }
+        span {
+          display: inline-block;
+          @media (min-width: $screen-sm-min) {
+            text-align: left;
+          }
+        }
+        &.gridBtn {
+          span {
+            line-height: 27px;
+            font-family: "FranklinGothicURW-Dem";
+          }
+        }
+      }
+      .addToCart{
+        svg{
+          @media (min-width: $screen-sm-min) {
+            vertical-align: initial;
+          }
+        }
+        &.gridBtn{
+          svg{
+            vertical-align: top;
+          }
+        }
+      }
+      .notifyMe {
+        span{
+          text-align: center;
+          line-height: 16px;
+        }
+      @media (min-width: $screen-sm-min) {
+          span {
+            text-align: left;
+            small {
+              font-size: 16px;
+              font-family: "FranklinGothicURW-Dem";
+              display: inline-block;
+            }
+          }
+      }
+      }
+      .outOfStock {
+        margin-top: 15px;
+        @media (min-width: $screen-sm-min) {
+          padding-left: 20px;
+        }
+
+        b {
+          color: #07b2d3;
+          vertical-align: text-bottom;
+          line-height: 22px;
+          padding-left: 5px;
+        }
+        .btn-cartAction {
+          margin-top: 10px;
+          font-size: 16px;
+        }
+      }
+      .shippingOptions {
+        display: none;
+        @media (min-width: $screen-sm-min) {
+          display: block;
+        }
+
+        .tipIcon {
+          display: inline;
+          position: absolute;
+          top: 3px;
+          padding-bottom: 0;
+          right: 3px;
+        }
+      }
+    }
+  }
+}

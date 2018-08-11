@@ -1,0 +1,51 @@
+.featuredDepartmentsContainer {
+  .featuredDepartmentsWrapper {
+    display: none;
+    .slick-slide{
+      > div{
+        display: flex;
+        @include clearfix();
+      }
+      width: 258px; //Total hack Slickslider has a bug with responsive 2 rows..
+      @media (min-width: $screen-sm-min) {
+        width: auto;
+      }
+    }
+    .featuredItem {
+      padding-left: 4px;
+      padding-right: 4px;
+      float: left;
+      width: 150px;
+      @media (min-width: $screen-sm-min) {
+        padding-left: 8px;
+        padding-right: 7px;
+        width: auto;
+      }
+      a {
+        margin-bottom: 4px;
+        display: block;
+        border: 1px solid #eee;
+        border-bottom: 1px solid #dbdbdb;
+        @media (min-width: $screen-sm-min) {
+          margin-bottom: 15px;
+        }
+
+      }
+      img{
+        max-width: 100%;
+      }
+    }
+    &.slick-initialized {
+      display: block;
+    }
+    .slick-dots{
+      bottom:-15px;
+    }
+  }
+  .slick-list{
+    margin-bottom: -15px;
+    @media (min-width: $screen-md-min) {
+      margin-right: 8px;
+    }
+  }
+}

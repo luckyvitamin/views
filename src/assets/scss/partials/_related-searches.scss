@@ -1,0 +1,33 @@
+#relatedSearches, #productListing {
+  @media (min-width: $screen-md-min) {
+    width: auto;
+  }
+  padding-left: 8px;
+    .related-search-tag, .tag {
+      display: inline-block;
+      position: relative;
+      margin: 8px 10px 0 0;
+      cursor: pointer;
+      border: 1px solid #e4e4e4;
+      border-radius: 3px;
+      padding: 10px 10px 10px 32px;
+    }
+
+    svg {
+      position:absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+#productListing {
+  h3{
+    color:$clover;
+  }
+.tag{
+  padding: 10px;
+}
+  p{
+    margin-bottom: 20px;
+  }
+}

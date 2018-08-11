@@ -1,0 +1,255 @@
+.kids{
+  background: #ffffff;
+}
+.kidsHero {
+  margin-top: 50px;
+  font-family: "FranklinGothicURW-Boo";
+  font-size: 16px;
+  background: #ffffff url('../images/lucky-kids-hero-bg.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media(min-width: $screen-sm-min) {
+    background-position: left;
+    margin-top: 0;
+  }
+  @media(min-width: $screen-md-min) {
+  }
+  @media(min-width: $screen-lg-min) {
+    background-size: 100% auto;
+  }
+  b {
+    color: #d2f958;
+  }
+  .heroContent {
+    width: 50%;
+    margin: 25px 0 30px;
+    text-align: left;
+    @media(min-width: $screen-sm-min) {
+      margin: 50px 0 30px 30px;
+    }
+    @media(min-width: $screen-md-min) {
+      margin: 50px 0 30px 30px;
+    }
+    @media(min-width: $screen-lg-min) {
+      margin: 65px 0 0 0;
+    }
+    p {
+      font-size: 16px;
+      line-height: 17px;
+      text-align: left;
+      font-family: "FranklinGothicURW-Med";
+      color: #ffffff;
+      @media(min-width: $screen-sm-min) {
+        max-width: 310px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      @media(min-width: $screen-md-min) {
+        font-size: 28px;
+        line-height: 42px;
+        max-width: 430px;
+      }
+    }
+    svg {
+      margin-bottom: 15px;
+      margin-left: 5px;
+      max-width: 110px;
+      @media(min-width: $screen-sm-min) {
+        max-width: 230px;
+      }
+      @media(min-width: $screen-md-min) {
+        max-width: 320px;
+      }
+      @media(min-width: $screen-lg-min) {
+        max-width: 400px;
+      }
+    }
+  }
+  .jumperContainer {
+    width: 50%;
+    img {
+      max-width: 100%;
+    }
+    @media(min-width: $screen-sm-min) {
+      width: 45%;
+      margin-top: -40px;
+      img {
+        max-width: 300px;
+      }
+    }
+    @media(min-width: $screen-md-min) {
+
+      img {
+        max-width: 400px;
+      }
+    }
+    @media(min-width: $screen-lg-min) {
+      width: 50%;
+      img {
+        max-width: 500px;
+      }
+    }
+  }
+}
+
+.luckyKids {
+  margin-top: 25px;
+  h1 {
+    color: $clover;
+    margin-bottom: 20px;
+    @media(max-width: $screen-sm-max) {
+     font-size: 24px;
+    }
+  }
+  b {
+    color: $luckyBackgroundGreen;
+  }
+  .luckyMission {
+    font-family: "FranklinGothicURW-Med";
+    font-size: 18px;
+    line-height: 24px;
+    @media(min-width: $screen-sm-min) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    a {
+      color: $luckyBackgroundGreen;
+      text-decoration: underline;
+    }
+    img{
+      padding-left: 4px;
+      width: 135px;
+      @media(min-width: $screen-sm-min) {
+       width: auto;
+      }
+    }
+    .missionLogos {
+      list-style: none;
+      margin: 20px 0 30px;
+      padding: 0;
+      li {
+        float: left;
+        width: 33%;
+        @media(min-width: $screen-sm-min) {
+          width: 20%;
+        }
+        svg {
+          @media(min-width: $screen-md-min) {
+            max-width: 205px;
+          }
+        }
+      }
+    }
+  }
+  .videoHolder{
+    width: 100%;
+    @media(min-width: $screen-sm-min) {
+      width: 80%;
+    }
+    margin: 30px auto;
+  }
+  .missionCallout {
+    margin: 50px 0;
+    svg {
+      height: 40px;
+      @media(min-width: $screen-md-min) {
+        height: 65px;
+      }
+    }
+    p {
+      font-family: "FranklinGothicURW-Boo";
+      font-size: 16px;
+      line-height: 22px;
+      display: block;
+      margin: 0 auto;
+      @media(min-width: $screen-sm-min) {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      @media(min-width: $screen-md-min) {
+        font-size: 22px;
+        line-height: 30px;
+      }
+      @media(min-width: $screen-lg-min) {
+        width: 85%;
+      }
+    }
+    h3 {
+      font-size: 22px;
+      margin: 10px 0 15px;
+      @media(min-width: $screen-md-min) {
+        font-size: 30px;
+        margin: 10px 0 25px;
+      }
+    }
+    .educationHeading {
+      color: #6bcaba;
+    }
+    .nutritionHeading {
+      color: $clover;
+    }
+    .fitnessHeading {
+      color: #f8bf51;
+    }
+  }
+  .initiativeHeading {
+    margin-bottom: 30px;
+    color: #3baf29;
+  }
+  .luckyInitiative {
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    .img-responsive{
+      width: 100%;
+    }
+    p {
+      padding: 15px;
+      font-family: "FranklinGothicURW-Boo";
+      font-size: 16px;
+      line-height: 20px;
+      min-height: 200px;
+      margin: 0;
+      @media(min-width: $screen-sm-min) {
+        min-height: 225px;
+      }
+      @media(min-width: $screen-md-min) {
+        min-height: 210px;
+      }
+      @media(min-width: $screen-lg-min) {
+        min-height: 180px;
+      }
+    }
+    .logo {
+      position: absolute;
+      right: 20px;
+      bottom: 25px;
+    }
+    .watchNow{
+      font-family: "FranklinGothicURW-Dem";
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 24px;
+      color: $clover;
+      position: absolute;
+      left: 20px;
+      bottom: 40px;
+    }
+  }
+  .featuredBrandHeader {
+    margin-top: 80px;
+    @media(max-width: $screen-sm-max) {
+      font-size: 24px;
+    }
+  }
+  .featuredBrand {
+    border: none;
+    img {
+      max-width: 100px;
+      width: auto;
+      margin: 0 auto;
+    }
+  }
+  .loadMore {
+    margin-top: 40px;
+  }
+}
