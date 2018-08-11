@@ -1,0 +1,23 @@
+{
+  "name": "luckyvitamin-views",
+  "version": "1.0.0",
+  "description": "The front-end views for LuckyVitamin.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luckyvitamin/views.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luckyvitamin/views/issues"
+  },
+  "homepage": "https://github.com/luckyvitamin/views#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
