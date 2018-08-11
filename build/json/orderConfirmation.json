@@ -1,0 +1,161 @@
+{
+  "orderNumber": "LV1234567890",
+  "customer": {
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "phoneNumber": "(212) 555-5555",
+    "email": "janedoe123@gmail.com"
+  },
+  "paymentDetails": {
+    "type": "visa",
+    "endsIn": "1234",
+    "expires": "Jun 19",
+    "useShippingAddress": true,
+    "billingAddress": {
+      "name": "Susan Williams",
+      "address1": "4321 Other Rd",
+      "address2": "",
+      "city": "Denver",
+      "state": "CO",
+      "zip": "12345",
+      "country": "United States"
+    }
+  },
+  "shippingInfo": {
+    "name": "Susan Williams",
+    "address1": "1234 Fake Lane",
+    "address2": "",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "12345",
+    "country": "United States"
+  },
+  "shipping": {
+    "rate": {
+      "id": "SOMEID",
+      "rate": "$0.00",
+      "free": true,
+      "name": "Standard",
+      "image": "images/usps.png",
+      "description": "1-5 Business Days",
+      "selected": true
+    }
+  },
+  "estimatedDelivery": "Feb 17 - Feb 21",
+  "shipSaver": 10.00,
+  "subTotal": 55.22,
+  "grandTotal": 444.44,
+  "totalSavings": 20.00,
+  "shippingCost": 10.00,
+  "luckyKidsTotal": 0.77,
+  "luckyPointTotal": 454,
+  "tax": 0,
+  "discount": 6.18,
+  "promoCodes": [
+    {
+      "promoText": "10% Off Sitewide",
+      "promoCode": "SAVETEN",
+      "promoCodeId": 10
+    },
+    {
+      "promoText": "15% Off Sitewide",
+      "promoCode": "SAVEFIVETEEN",
+      "promoCodeId": 11
+    }
+  ],
+  "totalItems": 3,
+  "freeItems": [
+    {
+      "image": "tmp/productimage-mobile.png",
+      "name": "Garden of Life - Organic Whey Protein Powder Grass Fed Chocolate Peanut Butter - 13.84 oz.",
+      "price": "$10.00",
+      "url": "http://www.google.com",
+      "amountTil": "$46.33",
+      "qty": 5,
+      "added": false,
+      "eligible": true
+    }
+  ],
+  "cartItems": [
+    {
+      "image": "tmp/productimage-mobile.png",
+      "name": "Garden of Life - Organic Whey Protein Powder Grass Fed Chocolate Peanut Butter - 13.84 oz.",
+      "price": "$10.00",
+      "autoShipPrice": "$9.00",
+      "shopRunner": true,
+      "luckyKids": false,
+      "backOrdered": false,
+      "shipSaver": false,
+      "qty": 1,
+      "maxQty": 6,
+      "lowestBundleCost": "$10.00",
+      "promo": "Buy One Get One Free",
+      "bundlePrices": [
+        {
+          "qty": 3,
+          "price": "10.50"
+        },
+        {
+          "qty": 6,
+          "price": "10.25"
+        },
+        {
+          "qty": 8,
+          "price": "10.00"
+        }
+      ],
+      "deliveryType": "autoship",
+      "deliveryFrequency": 1,
+      "deliveryFrequencyText": "Every 2 Weeks",
+      "saveWithLuckyLowest": "$0.22",
+      "bogoItem": {
+        "image": "tmp/productimage-mobile.png",
+        "name": "Garden of Life - Organic Whey Protein Powder Grass Fed Chocolate Peanut Butter - 13.84 oz.",
+        "oldPrice": "$10.00",
+        "currentPrice": "FREE",
+        "freeProduct": true,
+        "qty": 1
+      }
+    },
+    {
+      "image": "tmp/productimage-mobile.png",
+      "name": "Garden of Life - Organic Whey Protein Powder Grass Fed Chocolate Peanut Butter - 13.84 oz.",
+      "price": "$10.00",
+      "autoShipPrice": "$9.00",
+      "shopRunner": false,
+      "luckyKids": false,
+      "backOrdered": false,
+      "shipSaver": false,
+      "qty": 1,
+      "maxQty": 9995,
+      "promo": "Buy One Get One 50% Off",
+      "lowestBundleCost": "$11.00",
+      "bundlePrices": [
+        {
+          "qty": 3,
+          "price": "10.50"
+        },
+        {
+          "qty": 6,
+          "price": "10.25"
+        },
+        {
+          "qty": 8,
+          "price": "10.00"
+        }
+      ],
+      "deliveryType": "standard",
+      "deliveryFrequency": null,
+      "deliveryFrequencyText": null,
+      "saveWithLuckyLowest": null,
+      "bogoItem": {
+        "image": "tmp/productimage-mobile.png",
+        "name": "Garden of Life - Organic Whey Protein Powder Grass Fed Chocolate Peanut Butter - 13.84 oz.",
+        "oldPrice": "$10.00",
+        "currentPrice": "$5.00",
+        "freeProduct": false,
+        "qty": 1
+      }
+    }
+  ]
+}

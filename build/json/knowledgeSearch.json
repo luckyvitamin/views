@@ -1,0 +1,89 @@
+{
+  "articles": [
+    {
+      "heroImage": "/images/knowledgeHero1.png",
+      "smallCallOut": "Small Callout",
+      "link": "#SOMEURL",
+      "title": "Some Awesome Title",
+      "text": "This is awesome text This is awesome text This is awesome text This is awesome text"
+    },
+    {
+      "heroImage": "/images/knowledgeHero2.png",
+      "smallCallOut": "Small Callout",
+      "link": "#SOMEURL",
+      "date" : {"writtenDay": "Monday", "monthDay": "Mar 3", "time": "1 PM EST 10 AM PST"},
+      "title": "Some Awesome Title",
+      "text": "This is awesome text This is awesome text This is awesome text This is awesome text"
+    },
+    {
+      "heroImage": "/images/knowledgeHero3.png",
+      "smallCallOut": "Small Callout",
+      "link": "#SOMEURL",
+      "title": "Some Awesome Title",
+      "text": "This is awesome text This is awesome text This is awesome text This is awesome text"
+    },
+    {
+      "heroImage": "/images/knowledgeHero1.png",
+      "smallCallOut": "Small Callout",
+      "link": "#SOMEURL",
+      "title": "Some Awesome Title",
+      "text": "This is awesome text This is awesome text This is awesome text This is awesome text"
+    },
+    {
+      "heroImage": "/images/knowledgeHero2.png",
+      "smallCallOut": "Small Callout",
+      "link": "#SOMEURL",
+      "title": "Some Awesome Title",
+      "text": "This is awesome text This is awesome text This is awesome text This is awesome text"
+    },
+    {
+      "heroImage": "/images/knowledgeHero3.png",
+      "smallCallOut": "Small Callout",
+      "link": "#SOMEURL",
+      "title": "Some Awesome Title",
+      "text": "This is awesome text This is awesome text This is awesome text This is awesome text"
+    },
+    {
+      "heroImage": "/images/knowledgeHero1.png",
+      "smallCallOut": "Small Callout",
+      "link": "#SOMEURL",
+      "title": "Some Awesome Title",
+      "text": "This is awesome text This is awesome text This is awesome text This is awesome text"
+    },
+    {
+      "heroImage": "/images/knowledgeHero2.png",
+      "smallCallOut": "Small Callout",
+      "link": "#SOMEURL",
+      "title": "Some Awesome Title",
+      "text": "This is awesome text This is awesome text This is awesome text This is awesome text"
+    },
+    {
+      "heroImage": "/images/knowledgeHero3.png",
+      "smallCallOut": "Small Callout",
+      "link": "#SOMEURL",
+      "title": "Some Awesome Title",
+      "text": "This is awesome text This is awesome text This is awesome text This is awesome text"
+    }
+    , {
+      "heroImage": "/images/knowledgeHero1.png",
+      "smallCallOut": "Small Callout",
+      "link": "#SOMEURL",
+      "title": "Some Awesome Title",
+      "text": "This is awesome text This is awesome text This is awesome text This is awesome text"
+    },
+    {
+      "heroImage": "/images/knowledgeHero2.png",
+      "smallCallOut": "Small Callout",
+      "link": "#SOMEURL",
+      "title": "Some Awesome Title",
+      "text": "This is awesome text This is awesome text This is awesome text This is awesome text"
+    },
+    {
+      "heroImage": "/images/knowledgeHero3.png",
+      "smallCallOut": "Small Callout",
+      "link": "#SOMEURL",
+      "title": "Some Awesome Title",
+      "text": "This is awesome text This is awesome text This is awesome text This is awesome text"
+    }
+  ]
+}

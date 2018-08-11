@@ -1,0 +1,105 @@
+{
+  "currentProduct": {
+    "brandName": "Primal Kitchen",
+    "brandUrl": "#BRANDURL",
+    "imageNamePath": "tmp/productimage.png",
+    "productName": "Primal Fuel Low-Carb Meal Replacement Shake Vanilla",
+    "productUrl": "#productURL",
+    "productPrice": "$8.30",
+    "productPricePerServing": "$0.07",
+    "productServingDescription": "Coenzyme Q-10 100 mg. - 60 Softgels...",
+    "productId": "PD-12345",
+    "oldPrice": "15.64",
+    "savings": "47"
+  },
+  "luckyProducts": [
+    {
+      "brandName": "Primal Kitchen",
+      "brandUrl": "#BRANDURL",
+      "imageNamePath": "tmp/swapItem.jpg",
+      "productName": "Primal Fuel Low-Carb Meal Replacement Shake Vanilla",
+      "productUrl": "#productURL",
+      "productPrice": "$8.30",
+      "productPricePerServing": "$0.07",
+      "productServingDescription": "Coenzyme Q-10 100 mg. - 60 Softgels...",
+      "productId": "PD-12345",
+      "oldPrice": "15.64",
+      "savings": "47"
+    },
+    {
+      "brandName": "Primal Kitchen",
+      "brandUrl": "#BRANDURL",
+      "imageNamePath": "tmp/swapItem.jpg",
+      "productName": "Primal Fuel Low-Carb Meal Replacement Shake Vanilla",
+      "productUrl": "#productURL",
+      "productPrice": "$8.30",
+      "productPricePerServing": "$0.07",
+      "productServingDescription": "Coenzyme Q-10 100 mg. - 60 Softgels...",
+      "productId": "PD-12345",
+      "oldPrice": "15.64",
+      "savings": "47"
+    },
+    {
+      "brandName": "Primal Kitchen",
+      "brandUrl": "#BRANDURL",
+      "imageNamePath": "tmp/swapItem.jpg",
+      "productName": "Primal Fuel Low-Carb Meal Replacement Shake Vanilla",
+      "productUrl": "#productURL",
+      "productPrice": "$8.30",
+      "productPricePerServing": "$0.07",
+      "productServingDescription": "Coenzyme Q-10 100 mg. - 60 Softgels...",
+      "productId": "PD-12345",
+      "oldPrice": "15.64",
+      "savings": "47"
+    },{
+      "brandName": "Primal Kitchen",
+      "brandUrl": "#BRANDURL",
+      "imageNamePath": "tmp/swapItem.jpg",
+      "productName": "Primal Fuel Low-Carb Meal Replacement Shake Vanilla",
+      "productUrl": "#productURL",
+      "productPrice": "$8.30",
+      "productPricePerServing": "$0.07",
+      "productServingDescription": "Coenzyme Q-10 100 mg. - 60 Softgels...",
+      "productId": "PD-12345",
+      "oldPrice": "15.64",
+      "savings": "47"
+    },{
+      "brandName": "Primal Kitchen",
+      "brandUrl": "#BRANDURL",
+      "imageNamePath": "tmp/swapItem.jpg",
+      "productName": "Primal Fuel Low-Carb Meal Replacement Shake Vanilla",
+      "productUrl": "#productURL",
+      "productPrice": "$8.30",
+      "productPricePerServing": "$0.07",
+      "productServingDescription": "Coenzyme Q-10 100 mg. - 60 Softgels...",
+      "productId": "PD-12345",
+      "oldPrice": "15.64",
+      "savings": "47"
+    },{
+      "brandName": "Primal Kitchen",
+      "brandUrl": "#BRANDURL",
+      "imageNamePath": "tmp/swapItem.jpg",
+      "productName": "Primal Fuel Low-Carb Meal Replacement Shake Vanilla",
+      "productUrl": "#productURL",
+      "productPrice": "$8.30",
+      "productPricePerServing": "$0.07",
+      "productServingDescription": "Coenzyme Q-10 100 mg. - 60 Softgels...",
+      "productId": "PD-12345",
+      "oldPrice": "15.64",
+      "savings": "47"
+    },
+    {
+      "brandName": "Primal Kitchen",
+      "brandUrl": "#BRANDURL",
+      "imageNamePath": "tmp/swapItem.jpg",
+      "productName": "Primal Fuel Low-Carb Meal Replacement Shake Vanilla",
+      "productUrl": "#productURL",
+      "productPrice": "$8.30",
+      "productPricePerServing": "$0.07",
+      "productServingDescription": "Coenzyme Q-10 100 mg. - 60 Softgels...",
+      "productId": "PD-12345",
+      "oldPrice": "15.64",
+      "savings": "47"
+    }
+  ]
+}

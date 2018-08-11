@@ -1,0 +1,16 @@
+{
+  "shipSaver": 10.00,
+  "subTotal": 22.22,
+  "grandTotal": 444.44,
+  "totalSavings": 20.00,
+  "shippingCost": 10.00,
+  "weight": "0.3 lbs. (0.14 kg)",
+  "duties": "None",
+  "dutyNotice": "Duties, Taxes & Fees Prepaid!",
+  "dutyNoticeAlert": false,
+  "taxes": 5.00,
+  "salesTax": null,
+  "autoShipInCart":true,
+  "totalItems": 22,
+  "luckyPointTotal": 45
+}

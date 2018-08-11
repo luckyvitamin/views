@@ -1,0 +1,61 @@
+{
+  "header": "Sizes",
+  "flavors": [
+    {
+      "name": "8 oz",
+      "price": "$70.00",
+      "savings": "10%",
+      "oldPrice": "75.25",
+      "image": "tmp/productOption.png"
+    },
+    {
+      "name": "9 oz",
+      "price": "$70.00",
+      "savings": "10%",
+      "oldPrice": "75.25",
+      "image": "tmp/productOption.png"
+    },
+    {
+      "name": "10 oz",
+      "price": "$70.00",
+      "savings": "10%",
+      "oldPrice": "75.25",
+      "image": "tmp/productOption.png"
+    },
+    {
+      "name": "11 oz",
+      "price": "$70.00",
+      "savings": "10%",
+      "oldPrice": "75.25",
+      "image": "tmp/productOption.png"
+    },
+    {
+      "name": "13 oz",
+      "price": "$70.00",
+      "savings": "10%",
+      "oldPrice": "75.25",
+      "image": "tmp/productOption.png"
+    },
+    {
+      "name": "15 oz",
+      "price": "$70.00",
+      "savings": "10%",
+      "oldPrice": "75.25",
+      "image": "tmp/productOption.png"
+    },
+    {
+      "name": "16 oz",
+      "price": "$70.00",
+      "savings": "10%",
+      "oldPrice": "75.25",
+      "image": "tmp/productOption.png"
+    },
+    {
+      "name": "17 oz",
+      "price": "$70.00",
+      "savings": "10%",
+      "oldPrice": "75.25",
+      "image": "tmp/productOption.png"
+    }
+  ]
+}

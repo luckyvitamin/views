@@ -1,0 +1,58 @@
+{
+  "rates": [
+    {
+      "id" : "SOMEID",
+      "rate" : "$0.00",
+      "free": true,
+      "name" : "Standard",
+      "image" : "images/usps.png",
+      "description": "1-5 Business Days",
+      "selected":true
+    },
+    {
+      "id" : "SOMEID",
+      "rate" : "$6.00",
+      "free": false,
+      "name" : "Ground",
+      "image" : "images/usps.png",
+      "description": "1-5 Business Days",
+      "selected":false
+    },
+    {
+      "id" : "SOMEID",
+      "rate" : "$7.00",
+      "free": false,
+      "image" : "images/usps.png",
+      "name" : "USPS Priority Mail",
+      "description": "1-5 Business Days",
+      "selected":false
+    },
+    {
+      "id" : "SOMEID",
+      "rate" : "$8.00",
+      "free": false,
+      "image" : "images/fedex.png",
+      "name" : "One-Day Expedited",
+      "description": "1 Business Day",
+      "selected":false
+    },
+    {
+      "id" : "SOMEID",
+      "rate" : "$9.00",
+      "free": false,
+      "image" : "images/fedex.png",
+      "name" : "Two-Day Expedited",
+      "description": "2 Business Days",
+      "selected":false
+    },
+    {
+      "id" : "SOMEID",
+      "rate" : "$10.00",
+      "free": false,
+      "image" : "images/usps.png",
+      "name" : "Three-Day Expedited",
+      "description": "3 Business Days",
+      "selected":false
+    }
+  ]
+}

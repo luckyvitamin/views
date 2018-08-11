@@ -1,0 +1,47 @@
+{
+  "rates": [
+    {
+      "id" : "SOMEID",
+      "rate" : "£12.00",
+      "recommended": true,
+      "name" : "DHL Priority",
+      "image" : "images/dhl-priority.png",
+      "selected":true,
+      "dateRange":"January 25 - January 29",
+      "maxWeight":"60 lbs",
+      "shipping":"£10.00",
+      "duties":"£1.00",
+      "taxes":"£2.00",
+      "prePaid":true
+    },
+    {
+      "id" : "SOMEID",
+      "recommended": false,
+      "rate" : "£12.00",
+      "name" : "Delivered by Local Post",
+      "image" : "images/dhl-global-mail.png",
+      "selected":false,
+      "dateRange":"January 25 - January 29",
+      "maxWeight":"4 lbs (1.8kg)",
+      "shipping":"£10.00",
+      "duties":"NONE",
+      "taxes":"NONE",
+      "prePaid":false
+    },
+    {
+      "id" : "SOMEID",
+      "rate" : "£12.00",
+      "recommended": false,
+      "image" : "images/dhl-express-mail.png",
+      "name" : "DHL Express",
+      "selected":false,
+      "dateRange":"January 25 - January 29",
+      "maxWeight":"150 lbs",
+      "shipping":"£10.00",
+      "duties":"NONE",
+      "taxes":"NONE",
+      "prePaid":true
+    }
+
+  ]
+}

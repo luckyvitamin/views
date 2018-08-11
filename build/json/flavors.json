@@ -1,0 +1,61 @@
+{
+  "header": "Flavors",
+  "flavors": [
+    {
+      "name": "Choco Fruit & Nut",
+      "price": "$70.00",
+      "savings": "10%",
+      "oldPrice": "75.25",
+      "image": "tmp/productOption.png"
+    },
+    {
+      "name": "Nutty Cherry",
+      "price": "$70.00",
+      "savings": "10%",
+      "oldPrice": "75.25",
+      "image": "tmp/productOption.png"
+    },
+    {
+      "name": "Mango Cherry",
+      "price": "$70.00",
+      "savings": "10%",
+      "oldPrice": "75.25",
+      "image": "tmp/productOption.png"
+    },
+    {
+      "name": "Berry Berry",
+      "price": "$70.00",
+      "savings": "10%",
+      "oldPrice": "75.25",
+      "image": "tmp/productOption.png"
+    },
+    {
+      "name": "Melon Patch",
+      "price": "$70.00",
+      "savings": "10%",
+      "oldPrice": "75.25",
+      "image": "tmp/productOption.png"
+    },
+    {
+      "name": "Walnut",
+      "price": "$70.00",
+      "savings": "10%",
+      "oldPrice": "75.25",
+      "image": "tmp/productOption.png"
+    },
+    {
+      "name": "Honey",
+      "price": "$70.00",
+      "savings": "10%",
+      "oldPrice": "75.25",
+      "image": "tmp/productOption.png"
+    },
+    {
+      "name": "Citrus Cold",
+      "price": "$70.00",
+      "savings": "10%",
+      "oldPrice": "75.25",
+      "image": "tmp/productOption.png"
+    }
+  ]
+}
