@@ -2,6 +2,9 @@ var gulp = require('gulp'),
     babel = require('gulp-babel'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
+    sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    cleanCSS = require('gulp-clean-css'),
     del = require('del');
 
 var paths = {
@@ -23,6 +26,14 @@ function clean() {
   return del([ 'build/assets' ]);
 }
 
+function styles() {
+  return gulp.src(paths.styles.src)
+    .pipe(sass())
+    .pipe(autoprefixer())
+    .pipe(cleanCSS())
+    .pipe(gulp.dest(paths.styles.dest));
+}
+
 function vendorJs() {
   return gulp.src(paths.vendor.js)
     .pipe(babel())
@@ -33,15 +44,15 @@ function vendorJs() {
 
 function watch() {
   gulp.watch(paths.vendor.js, vendorJs);
+  gulp.watch(paths.styles.src, styles);
 }
 
 exports.clean = clean;
+exports.styles = styles;
 exports.vendorJs = vendorJs;
 exports.watch = watch;
 
-
-var build = gulp.series(clean, vendorJs);
-
+var build = gulp.series(clean, vendorJs, styles, watch);
 
 gulp.task('build', build);
 gulp.task('default', build);
